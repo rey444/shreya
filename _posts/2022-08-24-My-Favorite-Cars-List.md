@@ -19,7 +19,3 @@ title: My Favorite Cars
 > Dodge Challenger SRT Hellcat
 
 ![]({{ site.baseurl }}/images/challenger.png)
-
-> McLaren Senna
-
-![]({{ site.baseurl }}/images/senna.png)
