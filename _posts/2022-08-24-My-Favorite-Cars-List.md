@@ -19,3 +19,12 @@ title: My Favorite Cars
 > Dodge Challenger SRT Hellcat
 
 ![]({{ site.baseurl }}/images/challenger.png)
+
+> McLaren Senna
+
+![]({{ site.baseurl }}/images/senna.png)
+
+> Nissan GTR Skyline
+
+![]({{ site.baseurl }}/images/skyline.png)
+
