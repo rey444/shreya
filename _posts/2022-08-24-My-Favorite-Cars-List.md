@@ -47,5 +47,5 @@ title: My Favorite Cars
 
 > Audi R8
 
-[[![Audi R8]({{ site.baseurl }}/images/audi.png)][https://youtu.be/RmXz8P2MYnc "Audi R8"]]
+![Audi R8]({{ site.baseurl }}/images/audi.png)][Audi R8](https://youtu.be/RmXz8P2MYnc "Audi R8")
 
