@@ -48,7 +48,7 @@ image: /images/skyline.png
 
 > [Audi R8](https://youtu.be/RmXz8P2MYnc)[^1]
 
-![Audi R8]({{ site.baseurl }}/images/audi.png)]
+![Audi R8]({{ site.baseurl }}/images/audi.png)
 
 [^1]: Link to Audi R8 Video!
 
