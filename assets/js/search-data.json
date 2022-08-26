@@ -70,19 +70,6 @@
   
   
       ,"page0": {
-          "title": "Trimester 1",
-          "content": "Trimester 1 - Introduction to Tools and Resources . The initial weeks focus on introducing Tools, Pair Programming, and the AP Resources that we plan to use throughout the year. At the end of Weeks 0-3, students will be exposed to blogging with GitHub Pages; developing with Jupyter Notebooks, Python, JavaScript, HTML, and Code.org AppLab; working with AP classroom and becoming familiar with Create Performance Task project requirements. . Week Sprint AP Test Prep Career Tech Canvas . 3 | Creative Development | Create Performance Task, How I got a 5! | JavaScript Tutorial, Program Design with AppLab | TBD | . 2 | Data Abstraction | Python Lists and Dictionaries | Agile and Roles, HTML Fragments and Layouts | TBD | . 1 | Introduction to Python | Hello to Python, Reflections on Computer Science | Bash and Checks, Fastpages, Jupyter Notebooks, Markdown, Focus and Habits | Intro Python, Jupyter, Fastpages | . 0 | Tool Setup | Scoring History, Pseudo Code | Tools and Equipment | Tools Setup | . .",
-          "url": "https://rey444.github.io/shreya/Trimester%201",
-          "relUrl": "/Trimester 1",
-          "date": ""
-      }
-      
-  
-
-  
-
-  
-      ,"page2": {
           "title": "About Me",
           "content": ". . . I enjoy baking, writing, reading, and studying engine maintenance manuals. I’m the co-president of the DNHS Speech &amp; Debate Team, and the co-president of DNHS’ South Asian Student Union (SASU). You can regularly find me hiking or training at Karate. In the future, I aspire to become a Mechanical Engineer and pursue my passion for cars. click to learn more about SASU! 1. . Link to the South Asian Student Union Linktree. &#8617; . |",
           "url": "https://rey444.github.io/shreya/about/",
@@ -90,6 +77,19 @@
           "date": ""
       }
       
+  
+
+  
+      ,"page1": {
+          "title": "Trimester 1",
+          "content": "Trimester 1 - Introduction to Tools and Resources . The initial weeks focus on introducing Tools, Pair Programming, and the AP Resources that we plan to use throughout the year. At the end of Weeks 0-3, students will be exposed to blogging with GitHub Pages; developing with Jupyter Notebooks, Python, JavaScript, HTML, and Code.org AppLab; working with AP classroom and becoming familiar with Create Performance Task project requirements. . Week Python Docx Career Tech Miscellaneous . 3 | Creative Development | Create Performance Task, How I got a 5! | JavaScript Tutorial, Program Design with AppLab | TBD | . 2 | Data Abstraction | Python Lists and Dictionaries | Agile and Roles, HTML Fragments and Layouts | TBD | . 1 | Introduction to Python | Hello to Python, Reflections on Computer Science | Bash and Checks, Fastpages, Jupyter Notebooks, Markdown, Focus and Habits | Intro Python, Jupyter, Fastpages | . 0 | Tool Setup | Scoring History, Pseudo Code | Tools and Equipment | Tools Setup | . .",
+          "url": "https://rey444.github.io/shreya/Trimester%201",
+          "relUrl": "/Trimester 1",
+          "date": ""
+      }
+      
+  
+
   
 
   
