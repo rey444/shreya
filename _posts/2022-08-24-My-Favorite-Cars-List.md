@@ -4,6 +4,7 @@ layout: post
 description: A list of my current favorite cars.
 categories: [markdown]
 title: My Favorite Cars 
+image: /images/skyline.png
 ---
 # My Favorite Cars
 1. Dodge Challenger SRT Hellcat
