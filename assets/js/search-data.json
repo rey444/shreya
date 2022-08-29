@@ -93,7 +93,7 @@
   
       ,"page2": {
           "title": "APCSP Notes",
-          "content": "Vocab + Notes From Tri 1 . Vocab Tri 1 . key terms learned in trimester 1 . key = a field, or combination of fields, in a database table used to retrieve and sort rows in the table based on certain requirements | Key Notes Tri 1 . whenever making a _notebooks post with python code, set the kernel as bash for it to show up on the github fastpages blog | . Vocab + Notes From Tri 2 . Vocab + Notes From Tri 3 .",
+          "content": "Vocab + Notes From Tri 1 . Vocab Tri 1 . key terms learned in trimester 1 . Pseudo Code Key Terms . . Python Key Terms . key = a field, or combination of fields, in a database table used to retrieve and sort rows in the table based on certain requirements . | sequence of code = two or more lines of code . | command/function = the code . | static text = what we ask it to print; does not change . | output = varies depending on tools and development intentions; what the code does when you run it . | variable = stores input from the user . | dynamic = the input and output can change each time the code is run . | jupyter notebook input box = obtains input from the user . | terminal = python print usually obtains inputs and outputs to a terminal . | Key Notes Tri 1 . whenever making a _notebooks post with python code, set the kernel as bash for it to show up on the github fastpages blog | . Vocab + Notes From Tri 2 . Vocab + Notes From Tri 3 .",
           "url": "https://rey444.github.io/shreya/notes/",
           "relUrl": "/notes/",
           "date": ""
