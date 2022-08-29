@@ -140,45 +140,68 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-bash"><pre><span></span>import getpass, sys
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">getpass</span><span class="o">,</span> <span class="nn">sys</span>
 
-def question_with_response<span class="o">(</span>prompt<span class="o">)</span>:
-    print<span class="o">(</span><span class="s2">"Question: "</span> + prompt<span class="o">)</span>
-    <span class="nv">msg</span> <span class="o">=</span> input<span class="o">()</span>
-    <span class="k">return</span> msg
+<span class="k">def</span> <span class="nf">question_with_response</span><span class="p">(</span><span class="n">prompt</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Question: "</span> <span class="o">+</span> <span class="n">prompt</span><span class="p">)</span>
+    <span class="n">msg</span> <span class="o">=</span> <span class="nb">input</span><span class="p">()</span>
+    <span class="k">return</span> <span class="n">msg</span>
 
-<span class="nv">questions</span> <span class="o">=</span> <span class="m">3</span>
-<span class="nv">correct</span> <span class="o">=</span> <span class="m">0</span>
+<span class="n">questions</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="n">correct</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">question_and_answer</span> <span class="o">=</span> <span class="nb">input</span> 
 
-print<span class="o">(</span><span class="s1">'Hello, '</span> + getpass.getuser<span class="o">()</span> + <span class="s2">" running "</span> + sys.executable<span class="o">)</span>
-print<span class="o">(</span><span class="s2">"You will be asked "</span> + str<span class="o">(</span>questions<span class="o">)</span> + <span class="s2">" questions."</span><span class="o">)</span>
-question_and_answer<span class="o">(</span><span class="s2">"Are you ready to take a test?"</span><span class="o">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'Hello, '</span> <span class="o">+</span> <span class="n">getpass</span><span class="o">.</span><span class="n">getuser</span><span class="p">()</span> <span class="o">+</span> <span class="s2">" running "</span> <span class="o">+</span> <span class="n">sys</span><span class="o">.</span><span class="n">executable</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"You will be asked "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">questions</span><span class="p">)</span> <span class="o">+</span> <span class="s2">" questions."</span><span class="p">)</span>
+<span class="n">question_and_answer</span><span class="p">(</span><span class="s2">"Are you ready to take a test?"</span><span class="p">)</span>
 
-<span class="nv">rsp</span> <span class="o">=</span> question_with_response<span class="o">(</span><span class="s2">"What kernel is used to make sure your code in jupyter notebooks shows up on your fastpages?"</span><span class="o">)</span>
-<span class="k">if</span> <span class="nv">rsp</span> <span class="o">==</span> <span class="s2">"bash"</span>:
-    print<span class="o">(</span>rsp + <span class="s2">" is correct!"</span><span class="o">)</span>
-    <span class="nv">correct</span> <span class="o">+=</span> <span class="m">1</span>
-<span class="k">else</span>:
-    print<span class="o">(</span>rsp + <span class="s2">" is incorrect!"</span><span class="o">)</span>
+<span class="n">rsp</span> <span class="o">=</span> <span class="n">question_with_response</span><span class="p">(</span><span class="s2">"What kernel is used to make sure your code in jupyter notebooks shows up on your fastpages?"</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">rsp</span> <span class="o">==</span> <span class="s2">"bash"</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">rsp</span> <span class="o">+</span> <span class="s2">" is correct!"</span><span class="p">)</span>
+    <span class="n">correct</span> <span class="o">+=</span> <span class="mi">1</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">rsp</span> <span class="o">+</span> <span class="s2">" is incorrect!"</span><span class="p">)</span>
 
-<span class="nv">rsp</span> <span class="o">=</span> question_with_response<span class="o">(</span><span class="s2">"What command is used to evaluate correct or incorrect response in this example?"</span><span class="o">)</span>
-<span class="k">if</span> <span class="nv">rsp</span> <span class="o">==</span> <span class="s2">"if"</span>:
-    print<span class="o">(</span>rsp + <span class="s2">" is correct!"</span><span class="o">)</span>
-    <span class="nv">correct</span> <span class="o">+=</span> <span class="m">1</span>
-<span class="k">else</span>:
-    print<span class="o">(</span>rsp + <span class="s2">" is incorrect!"</span><span class="o">)</span>
+<span class="n">rsp</span> <span class="o">=</span> <span class="n">question_with_response</span><span class="p">(</span><span class="s2">"What command is used to evaluate correct or incorrect response in this example?"</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">rsp</span> <span class="o">==</span> <span class="s2">"if"</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">rsp</span> <span class="o">+</span> <span class="s2">" is correct!"</span><span class="p">)</span>
+    <span class="n">correct</span> <span class="o">+=</span> <span class="mi">1</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">rsp</span> <span class="o">+</span> <span class="s2">" is incorrect!"</span><span class="p">)</span>
 
-<span class="nv">rsp</span> <span class="o">=</span> question_with_response<span class="o">(</span><span class="s2">"How can you create a _posts page with an image?"</span><span class="o">)</span>
-<span class="k">if</span> <span class="nv">rsp</span> <span class="o">==</span> <span class="s2">"squiggly brackets"</span>:
-    print<span class="o">(</span>rsp + <span class="s2">" is correct!"</span><span class="o">)</span>
-    <span class="nv">correct</span> <span class="o">+=</span> <span class="m">1</span>
-<span class="k">else</span>:
-    print<span class="o">(</span>rsp + <span class="s2">" is incorrect!"</span><span class="o">)</span>
+<span class="n">rsp</span> <span class="o">=</span> <span class="n">question_with_response</span><span class="p">(</span><span class="s2">"How can you create a _posts page with an image?"</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">rsp</span> <span class="o">==</span> <span class="s2">"squiggly brackets"</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">rsp</span> <span class="o">+</span> <span class="s2">" is correct!"</span><span class="p">)</span>
+    <span class="n">correct</span> <span class="o">+=</span> <span class="mi">1</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">rsp</span> <span class="o">+</span> <span class="s2">" is incorrect!"</span><span class="p">)</span>
 
-print<span class="o">(</span>getpass.getuser<span class="o">()</span> + <span class="s2">" you scored "</span> + str<span class="o">(</span>correct<span class="o">)</span> +<span class="s2">"/"</span> + str<span class="o">(</span>questions<span class="o">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">getpass</span><span class="o">.</span><span class="n">getuser</span><span class="p">()</span> <span class="o">+</span> <span class="s2">" you scored "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">correct</span><span class="p">)</span> <span class="o">+</span><span class="s2">"/"</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">questions</span><span class="p">))</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Hello, shreyasapkal running /home/shreyasapkal/anaconda3/bin/python
+You will be asked 3 questions.
+Question: What kernel is used to make sure your code in jupyter notebooks shows up on your fastpages?
+bash] is incorrect!
+Question: What command is used to evaluate correct or incorrect response in this example?
+if is correct!
+Question: How can you create a _posts page with an image?
+squiggly brackets is correct!
+shreyasapkal you scored 2/3
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
