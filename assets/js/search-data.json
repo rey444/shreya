@@ -2,7 +2,7 @@
   
     
         "post0": {
-            "title": "Play Guess My Number!",
+            "title": "Python Quiz!",
             "content": "import getpass, sys def question_with_response(prompt): print(&quot;Question: &quot; + prompt) msg = input() return msg questions = 3 correct = 0 print(&#39;Hello, &#39; + getpass.getuser() + &quot; running &quot; + sys.executable) print(&quot;You will be asked &quot; + str(questions) + &quot; questions.&quot;) question_and_answer(&quot;Are you ready to take a test?&quot;) rsp = question_with_response(&quot;What kernel is used to make sure your code in jupyter notebooks shows up on your fastpages?&quot;) if rsp == &quot;bash&quot;: print(rsp + &quot; is correct!&quot;) correct += 1 else: print(rsp + &quot; is incorrect!&quot;) rsp = question_with_response(&quot;What command is used to evaluate correct or incorrect response in this example?&quot;) if rsp == &quot;if&quot;: print(rsp + &quot; is correct!&quot;) correct += 1 else: print(rsp + &quot; is incorrect!&quot;) rsp = question_with_response(&quot;How can you create a _posts page with an image?&quot;) if rsp == &quot;squiggly brackets&quot;: print(rsp + &quot; is correct!&quot;) correct += 1 else: print(rsp + &quot; is incorrect!&quot;) print(getpass.getuser() + &quot; you scored &quot; + str(correct) +&quot;/&quot; + str(questions)) .",
             "url": "https://rey444.github.io/shreya/jupyter/2022/08/28/python-quiz.html",
             "relUrl": "/jupyter/2022/08/28/python-quiz.html",
