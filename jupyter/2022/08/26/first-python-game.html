@@ -208,6 +208,7 @@ window.onload = wrap_img;
     <span class="n">current_guess</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">"What is your guess?"</span><span class="p">))</span>
     <span class="c1"># num_guesses = num_guesses +1</span>
     <span class="n">num_guesses</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">current_guess</span><span class="p">)</span>
     
     <span class="k">if</span> <span class="n">current_guess</span> <span class="o">==</span> <span class="n">secret_number</span><span class="p">:</span> 
         <span class="nb">print</span><span class="p">(</span><span class="s2">"You are correct!"</span><span class="p">)</span>
@@ -231,18 +232,23 @@ window.onload = wrap_img;
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Welcome to Guess My Number!
+50
 Too low!
-Too low!
-Too low!
-Too low!
-Too low!
+60
 Too high!
+55
 Too high!
-Too low!
-Too low!
+55
 Too high!
+54
+Too high!
+53
+Too high!
+51
+Too low!
+52
 You are correct!
-You took 11 guesses!
+You took 8 guesses!
 </pre>
 </div>
 </div>
