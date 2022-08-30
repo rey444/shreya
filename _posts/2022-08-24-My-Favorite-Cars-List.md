@@ -3,6 +3,7 @@ toc: true
 layout: post
 description: A list of my current favorite cars.
 categories: [markdown]
+tags: [Tri1]
 title: My Favorite Cars 
 image: /images/skyline.png
 ---
