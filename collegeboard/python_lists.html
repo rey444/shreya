@@ -254,36 +254,39 @@ person {'name': 'Shreya Sapkal', 'age': 17, 'score': 97.0, 'langs': ['Python', '
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">InfoDb</span> <span class="o">=</span> <span class="p">[]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Define an empty List called InfoDb</span>
+<span class="n">InfoDb</span> <span class="o">=</span> <span class="p">[]</span>
 
 <span class="c1"># Append to List a Dictionary of key/values related to a person and cars</span>
 <span class="n">InfoDb</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
-    <span class="s2">"FirstName"</span><span class="p">:</span> <span class="s2">"John"</span><span class="p">,</span>
-    <span class="s2">"LastName"</span><span class="p">:</span> <span class="s2">"Mortensen"</span><span class="p">,</span>
-    <span class="s2">"DOB"</span><span class="p">:</span> <span class="s2">"October 21"</span><span class="p">,</span>
-    <span class="s2">"Residence"</span><span class="p">:</span> <span class="s2">"San Diego"</span><span class="p">,</span>
-    <span class="s2">"Email"</span><span class="p">:</span> <span class="s2">"jmortensen@powayusd.com"</span><span class="p">,</span>
-    <span class="s2">"Owns_Cars"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"2015-Fusion"</span><span class="p">,</span> <span class="s2">"2011-Ranger"</span><span class="p">,</span> <span class="s2">"2003-Excursion"</span><span class="p">,</span> <span class="s2">"1997-F350"</span><span class="p">,</span> <span class="s2">"1969-Cadillac"</span><span class="p">]</span>
-<span class="p">})</span>
-
-<span class="c1"># Append to List a 2nd Dictionary of key/values</span>
-<span class="n">InfoDb</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
-    <span class="s2">"FirstName"</span><span class="p">:</span> <span class="s2">"Sunny"</span><span class="p">,</span>
-    <span class="s2">"LastName"</span><span class="p">:</span> <span class="s2">"Naidu"</span><span class="p">,</span>
-    <span class="s2">"DOB"</span><span class="p">:</span> <span class="s2">"August 2"</span><span class="p">,</span>
-    <span class="s2">"Residence"</span><span class="p">:</span> <span class="s2">"Temecula"</span><span class="p">,</span>
-    <span class="s2">"Email"</span><span class="p">:</span> <span class="s2">"snaidu@powayusd.com"</span><span class="p">,</span>
-    <span class="s2">"Owns_Cars"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"4Runner"</span><span class="p">]</span>
-<span class="p">})</span>
-
-<span class="c1"># Append to List a 3rd Dictionary of keys/values</span>
-<span class="n">InfoDb</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
     <span class="s2">"FirstName"</span><span class="p">:</span> <span class="s2">"Shreya"</span><span class="p">,</span>
     <span class="s2">"LastName"</span><span class="p">:</span> <span class="s2">"Sapkal"</span><span class="p">,</span>
+    <span class="s2">"Nicknames"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"Rey"</span><span class="p">,</span> <span class="s2">"Reyu"</span><span class="p">,</span> <span class="s2">"Shweya"</span><span class="p">],</span>
     <span class="s2">"DOB"</span><span class="p">:</span> <span class="s2">"December 12"</span><span class="p">,</span>
     <span class="s2">"Residence"</span><span class="p">:</span> <span class="s2">"San Diego"</span><span class="p">,</span>
     <span class="s2">"Email"</span><span class="p">:</span> <span class="s2">"shreya.sapkal959@gmail.com"</span><span class="p">,</span>
-    <span class="s2">"Owns_Cars"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"2013-Ford Escape"</span><span class="p">,</span> <span class="s2">"2020-Chrysler Pacifica"</span><span class="p">]</span>
+    <span class="s2">"Owns_Cars"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"2013-Ford Escape"</span><span class="p">,</span> <span class="s2">"2020-Chrysler Pacifica"</span><span class="p">],</span>
+    <span class="s2">"Hobbies"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"Karate"</span><span class="p">,</span> <span class="s2">"Tennis"</span><span class="p">,</span> <span class="s2">"Reading"</span><span class="p">,</span> <span class="s2">"Writing"</span><span class="p">,</span> <span class="s2">"Drawing"</span><span class="p">]</span> 
+<span class="p">})</span>
+<span class="n">InfoDb</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
+    <span class="s2">"FirstName"</span><span class="p">:</span> <span class="s2">"Jiya"</span><span class="p">,</span>
+    <span class="s2">"LastName"</span><span class="p">:</span> <span class="s2">"Savlani"</span><span class="p">,</span>
+    <span class="s2">"Nicknames"</span><span class="p">:</span> <span class="s2">"Jiyu"</span><span class="p">,</span>
+    <span class="s2">"DOB"</span><span class="p">:</span> <span class="s2">"March 7"</span><span class="p">,</span>
+    <span class="s2">"Residence"</span><span class="p">:</span> <span class="s2">"San Diego"</span><span class="p">,</span>
+    <span class="s2">"Email"</span><span class="p">:</span> <span class="s2">"starjiyu@gmail.com"</span><span class="p">,</span>
+    <span class="s2">"Owns_Cars"</span><span class="p">:</span> <span class="s2">"Lambo"</span><span class="p">,</span>
+    <span class="s2">"Hobbies"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"Reading"</span><span class="p">,</span> <span class="s2">"Watching Cobra Kai"</span><span class="p">]</span>
+<span class="p">})</span>
+<span class="n">InfoDb</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
+    <span class="s2">"FirstName"</span><span class="p">:</span> <span class="s2">"Vaishavi"</span><span class="p">,</span>
+    <span class="s2">"LastName"</span><span class="p">:</span> <span class="s2">"Jayashankar"</span><span class="p">,</span>
+    <span class="s2">"Nicknames"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"Vaishavi-Chan"</span><span class="p">,</span> <span class="s2">"Vai"</span><span class="p">,</span> <span class="s2">"Vaiu"</span><span class="p">],</span>
+    <span class="s2">"DOB"</span><span class="p">:</span> <span class="s2">"March 15"</span><span class="p">,</span>
+    <span class="s2">"Residence"</span><span class="p">:</span> <span class="s2">"San Diego"</span><span class="p">,</span>
+    <span class="s2">"Email"</span><span class="p">:</span> <span class="s2">"vaishavi2005@gmail.com"</span><span class="p">,</span>
+    <span class="s2">"Owns_Cars"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"Volkswagen"</span><span class="p">,</span> <span class="s2">"Chevrolet Traverse"</span><span class="p">],</span>
+    <span class="s2">"Hobbies"</span><span class="p">:</span> <span class="p">[</span><span class="s2">"Music"</span><span class="p">,</span> <span class="s2">"Drawing"</span><span class="p">]</span>
 <span class="p">})</span>
 
 <span class="c1"># Print the data structure</span>
@@ -300,7 +303,7 @@ person {'name': 'Shreya Sapkal', 'age': 17, 'score': 97.0, 'langs': ['Python', '
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>[{'FirstName': 'John', 'LastName': 'Mortensen', 'DOB': 'October 21', 'Residence': 'San Diego', 'Email': 'jmortensen@powayusd.com', 'Owns_Cars': ['2015-Fusion', '2011-Ranger', '2003-Excursion', '1997-F350', '1969-Cadillac']}, {'FirstName': 'Sunny', 'LastName': 'Naidu', 'DOB': 'August 2', 'Residence': 'Temecula', 'Email': 'snaidu@powayusd.com', 'Owns_Cars': ['4Runner']}, {'FirstName': 'Shreya', 'LastName': 'Sapkal', 'DOB': 'December 12', 'Residence': 'San Diego', 'Email': 'shreya.sapkal959@gmail.com', 'Owns_Cars': ['2013-Ford Escape', '2020-Chrysler Pacifica']}]
+<pre>[{'FirstName': 'Shreya', 'LastName': 'Sapkal', 'Nicknames': ['Rey', 'Reyu', 'Shweya'], 'DOB': 'December 12', 'Residence': 'San Diego', 'Email': 'shreya.sapkal959@gmail.com', 'Owns_Cars': ['2013-Ford Escape', '2020-Chrysler Pacifica'], 'Hobbies': ['Karate', 'Tennis', 'Reading', 'Writing', 'Drawing']}, {'FirstName': 'Jiya', 'LastName': 'Savlani', 'Nicknames': 'Jiyu', 'DOB': 'March 7', 'Residence': 'San Diego', 'Email': 'starjiyu@gmail.com', 'Owns_Cars': 'Lambo', 'Hobbies': ['Reading', 'Watching Cobra Kai']}, {'FirstName': 'Vaishavi', 'LastName': 'Jayashankar', 'Nicknames': ['Vaishavi-Chan', 'Vai', 'Vaiu'], 'DOB': 'March 15', 'Residence': 'San Diego', 'Email': 'vaishavi2005@gmail.com', 'Owns_Cars': ['Volkswagen', 'Chevrolet Traverse'], 'Hobbies': ['Music', 'Drawing']}]
 </pre>
 </div>
 </div>
@@ -339,9 +342,10 @@ person {'name': 'Shreya Sapkal', 'age': 17, 'score': 97.0, 'langs': ['Python', '
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">print_data</span><span class="p">(</span><span class="n">d_rec</span><span class="p">):</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">d_rec</span><span class="p">[</span><span class="s2">"FirstName"</span><span class="p">],</span> <span class="n">d_rec</span><span class="p">[</span><span class="s2">"LastName"</span><span class="p">])</span>  <span class="c1"># using comma puts space between values</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\t</span><span class="s2">"</span><span class="p">,</span> <span class="s2">"Nicknames"</span><span class="p">,</span> <span class="n">d_rec</span><span class="p">[</span><span class="s2">"Nicknames"</span><span class="p">])</span> <span class="c1"># print the nickname values out of the dictionary</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\t</span><span class="s2">"</span><span class="p">,</span> <span class="s2">"Residence:"</span><span class="p">,</span> <span class="n">d_rec</span><span class="p">[</span><span class="s2">"Residence"</span><span class="p">])</span> <span class="c1"># \t is a tab indent to organize the data</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\t</span><span class="s2">"</span><span class="p">,</span> <span class="s2">"Birth Day:"</span><span class="p">,</span> <span class="n">d_rec</span><span class="p">[</span><span class="s2">"DOB"</span><span class="p">])</span> <span class="c1"># we are specifying which values we want it to print out of the dictionary</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\t</span><span class="s2">"</span><span class="p">,</span> <span class="s2">"Cars: "</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">""</span><span class="p">)</span>  <span class="c1"># end="" make sure no return occurs; always put after the last variable</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\t</span><span class="s2">"</span><span class="p">,</span> <span class="s2">"Cars:"</span><span class="p">,</span> <span class="n">d_rec</span><span class="p">[</span><span class="s2">"Owns_Cars"</span><span class="p">])</span>  <span class="c1"># end="" make sure no return occurs; always put after the last variable</span>
     <span class="nb">print</span><span class="p">(</span><span class="s2">", "</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">d_rec</span><span class="p">[</span><span class="s2">"Owns_Cars"</span><span class="p">]))</span>  <span class="c1"># join allows printing a string list with separator</span>
     <span class="nb">print</span><span class="p">()</span>
 
