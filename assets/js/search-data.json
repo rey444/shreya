@@ -104,7 +104,7 @@
   
       ,"page1": {
           "title": "Trimester 1",
-          "content": "Trimester 1 - Introduction to Tools and Resources . The initial weeks focus on introducing Tools, Pair Programming, and the AP Resources that we plan to use throughout the year. At the end of Weeks 0-3, students will be exposed to blogging with GitHub Pages; developing with Jupyter Notebooks, Python, JavaScript, HTML, and Code.org AppLab; working with AP classroom and becoming familiar with Create Performance Task project requirements. . Week Learning Objectives Assignment Links       . 0 | Bash and Checks, Intro to Fastpages, Jupyter Notebooks, Markdown, and Python | 1. Test Markdown Page 2. Bash &amp; Kernel Checks 3. Changing index.html | 1 | Working with Python, Importing .docx files, Learning more about Markdowns &amp; Jupyter Notebooks | 1. Notes Page | . .",
+          "content": "Trimester 1 - Introduction to Tools and Resources . The initial weeks focus on introducing Tools, Pair Programming, and the AP Resources that we plan to use throughout the year. At the end of Weeks 0-3, students will be exposed to blogging with GitHub Pages; developing with Jupyter Notebooks, Python, JavaScript, HTML, and Code.org AppLab; working with AP classroom and becoming familiar with Create Performance Task project requirements. . | Week | Learning Objectives | Assignment Links | | :—-: | :——: | :————————-: | | 0 | Bash and Checks, Intro to Fastpages, Jupyter Notebooks, Markdown, and Python | . Test Markdown Page | Changing index.html | . | .",
           "url": "https://rey444.github.io/shreya/Trimester%201",
           "relUrl": "/Trimester 1",
           "date": ""
