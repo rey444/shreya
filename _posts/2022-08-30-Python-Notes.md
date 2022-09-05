@@ -2,7 +2,7 @@
 toc: true
 layout: post
 description: Notes from Python lecture.
-categories: [notes]
+categories: [t1notes]
 title: Tri 1 Week 1 - Python Lecture Notes
 ---
 
