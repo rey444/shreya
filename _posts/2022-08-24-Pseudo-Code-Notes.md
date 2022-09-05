@@ -2,7 +2,7 @@
 toc: true
 layout: post
 description: Notes from pseudo code lecture.
-categories: [tri1, notes]
+categories: [notes]
 title: Tri 1 Week 0 - Pseudo Code Notes 
 ---
 

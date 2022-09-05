@@ -2,7 +2,7 @@
 toc: true
 layout: post
 description: Notes from Python Lists & Dictionaries lecture.
-categories: [tri1, notes]
+categories: [notes]
 title: Tri 1 Week 2 - Lists & Dictionaries Notes 
 ---
 
