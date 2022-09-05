@@ -15,8 +15,8 @@
         ,"post1": {
             "title": "Tri 1 Week 2 - Lists & Dictionaries Notes",
             "content": "jekyll: the coding language that allows you to do actions like committing changes/pushing changes to github | for statements: loops, iterates | if statements: conditional, branches code | HTML Fragments: all our posts are small fragments of code and files that go into the system and are processed to convert to HTML | img. tag: helps you control the size of the images you post | procedural abstraction: when we write code sections (called “procedures” or in Java, “static methods”) which are generalized by having variable parameters; The idea is that we have code which can cope with a variety of different situations, depending on how its parameters are set when it is called. | .",
-            "url": "https://rey444.github.io/shreya/notes/2022/09/04/Lists-Dictionaries.html",
-            "relUrl": "/notes/2022/09/04/Lists-Dictionaries.html",
+            "url": "https://rey444.github.io/shreya/t1notes/2022/09/04/Lists-Dictionaries.html",
+            "relUrl": "/t1notes/2022/09/04/Lists-Dictionaries.html",
             "date": " • Sep 4, 2022"
         }
         
@@ -26,8 +26,8 @@
         ,"post2": {
             "title": "Tri 1 Week 1 - Python Lecture Notes",
             "content": "Python Key Terms . key = a field, or combination of fields, in a database table used to retrieve and sort rows in the table based on certain requirements . | sequence of code = two or more lines of code . | command/function = the code . | static text = what we ask it to print; does not change . | output = varies depending on tools and development intentions; what the code does when you run it . | variable = stores input from the user . | dynamic = the input and output can change each time the code is run . | jupyter notebook input box = obtains input from the user . | terminal = python print usually obtains inputs and outputs to a terminal . |",
-            "url": "https://rey444.github.io/shreya/notes/2022/08/30/Python-Notes.html",
-            "relUrl": "/notes/2022/08/30/Python-Notes.html",
+            "url": "https://rey444.github.io/shreya/t1notes/2022/08/30/Python-Notes.html",
+            "relUrl": "/t1notes/2022/08/30/Python-Notes.html",
             "date": " • Aug 30, 2022"
         }
         
@@ -92,8 +92,8 @@
         ,"post8": {
             "title": "Tri 1 Week 0 - Pseudo Code Notes",
             "content": "pseudo code = non-operational programming language; highlights instructions common for many languages | . AP Exam Resources . AP Exam Reference Sheet . .",
-            "url": "https://rey444.github.io/shreya/notes/2022/08/24/Pseudo-Code-Notes.html",
-            "relUrl": "/notes/2022/08/24/Pseudo-Code-Notes.html",
+            "url": "https://rey444.github.io/shreya/t1notes/2022/08/24/Pseudo-Code-Notes.html",
+            "relUrl": "/t1notes/2022/08/24/Pseudo-Code-Notes.html",
             "date": " • Aug 24, 2022"
         }
         
