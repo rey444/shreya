@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      1 min read
+      2 min read
     
 </span></p>
 
@@ -97,12 +97,64 @@ window.onload = wrap_img;
   <div class="post-content e-content" itemprop="articleBody">
     <ul id="toc" class="section-nav">
 <li class="toc-entry toc-h2"><a href="#codeorg-lecture-notes">Code.org Lecture Notes</a></li>
+<li class="toc-entry toc-h2"><a href="#program-purpose--function">Program Purpose &amp; Function</a></li>
+<li class="toc-entry toc-h2"><a href="#data-abstraction">Data Abstraction</a></li>
+<li class="toc-entry toc-h2"><a href="#managing-complexity">Managing Complexity</a></li>
+<li class="toc-entry toc-h2"><a href="#procedural-abstraction">Procedural Abstraction</a></li>
+<li class="toc-entry toc-h2"><a href="#algorithm-implementation">Algorithm Implementation</a></li>
+<li class="toc-entry toc-h2"><a href="#testing">Testing</a></li>
 <li class="toc-entry toc-h2"><a href="#program-design-processflowchart">Program Design Process/Flowchart</a></li>
 <li class="toc-entry toc-h2"><a href="#key-learnings">Key Learnings</a></li>
 </ul><h2 id="codeorg-lecture-notes">
 <a class="anchor" href="#codeorg-lecture-notes" aria-hidden="true"><span class="octicon octicon-link"></span></a>Code.org Lecture Notes</h2>
 <ul>
   <li>Debug Consoles help us determine whether or not our code is working, and also to identify areas where we messed up the code</li>
+</ul>
+
+<h2 id="program-purpose--function">
+<a class="anchor" href="#program-purpose--function" aria-hidden="true"><span class="octicon octicon-link"></span></a>Program Purpose &amp; Function</h2>
+<ul>
+  <li>
+<strong>Purpose</strong>: To quiz users on Okinawan Goju-Ryu Karate &amp; The Karate Kid.</li>
+  <li>
+<strong>Functionality</strong>: Take the user through a series of quiz pages with different questions and answer options on each page. Keep the user’s score and tell it to them at the end. Allow an opportunity to play the game again.</li>
+  <li>
+<strong>Input</strong>: User clicking on labeled buttons</li>
+  <li>
+<strong>Output</strong>: Program brings the screen for the next question, correct/incorrect answer screen, or the final score calculators screen</li>
+</ul>
+
+<h2 id="data-abstraction">
+<a class="anchor" href="#data-abstraction" aria-hidden="true"><span class="octicon octicon-link"></span></a>Data Abstraction</h2>
+<ul>
+  <li>Data is stored as a variable which counts the user’s score as they move through the quiz</li>
+  <li>The code segments on the final score screens print the score variable, thus showing it’s use in fulfilling the program’s purpose of quizzing the user and giving them a score</li>
+  <li>The variable is called “score” and is defined at the top of the program</li>
+  <li>The data contained in the variable “score” is the amount of points the user gathers by answering correct questions in the quiz</li>
+</ul>
+
+<h2 id="managing-complexity">
+<a class="anchor" href="#managing-complexity" aria-hidden="true"><span class="octicon octicon-link"></span></a>Managing Complexity</h2>
+<ul>
+  <li>My program doesn’t use a list being used to manage complexity in the program</li>
+</ul>
+
+<h2 id="procedural-abstraction">
+<a class="anchor" href="#procedural-abstraction" aria-hidden="true"><span class="octicon octicon-link"></span></a>Procedural Abstraction</h2>
+<ul>
+  <li>Each code segment which responds to the user clicking an answer choice button uses parameters. For example, when the user clicks the correct answer, the program adds 1 to their score and moves to the “correct answer” screen. On the other hand, when the user clicks any one of the 3 incorrect answer options, the program does not add 1 to their score and moves on to the “incorrect answer” screen. The <strong>parameter</strong> is whether the user selects the correct answer option, and the procedure that is impacted is the addition of the score and the next screen to display.</li>
+</ul>
+
+<h2 id="algorithm-implementation">
+<a class="anchor" href="#algorithm-implementation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Algorithm Implementation</h2>
+<ul>
+  <li>My program does not use an algorithm, I think</li>
+</ul>
+
+<h2 id="testing">
+<a class="anchor" href="#testing" aria-hidden="true"><span class="octicon octicon-link"></span></a>Testing</h2>
+<ul>
+  <li>I included two console log message outputs to ensure that the code works when the user clicks the correct answer option for questions 1 and 2</li>
 </ul>
 
 <h2 id="program-design-processflowchart">
