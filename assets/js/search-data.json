@@ -223,23 +223,16 @@
   
 
   
-
+      ,"page2": {
+          "title": "JavaScript",
+          "content": "Notes from JavaScript Lecture &amp; Data Table Building Using JavaScript | Team Exploration w/ JavaScript: Calculator | .",
+          "url": "https://rey444.github.io/shreya/javascript-work/",
+          "relUrl": "/javascript-work/",
+          "date": ""
+      }
+      
   
 
-  
-  
-
-  
-
-  
-  
-
-  
-
-  
-  
-
-  
   
 
   
@@ -248,7 +241,25 @@
   
 
   
-      ,"page12": {
+
+  
+  
+
+  
+
+  
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+      ,"page13": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://rey444.github.io/shreya/robots.txt",
