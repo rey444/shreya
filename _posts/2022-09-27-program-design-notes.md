@@ -12,5 +12,7 @@ title: Tri 1 Week 6 - Big Idea 1 - Program Design Lecture Notes
 - Modeling and UML help with visualization
 - **wire frames** = screens that show how your program would look/work; outline what the project will look like
 
+> UML Image
+
 ![]({{ site.baseurl }}/images/uml.png)
 
