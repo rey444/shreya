@@ -5,6 +5,8 @@ categories: [tri1]
 title: SSJN Trimester 1 Team Project Code Screenshots
 ---
 
+> [Link to Final Project Final Blog](https://github.com/jiya-sav/SSJN_flask/issues/5)
+
 ## Github Fastpages
 ### "input emotion" page
 ![]({{ site.baseurl }}/images/2022-11-04(1).png)
