@@ -10,14 +10,14 @@ week: 13
 type: pbl
 ---
 
-<!-- Hack 1: add a character display to text when 8 bits, determine if printable or not printable -->
+<!-- Hack 1: add a character display to text when 8 bits, determine if printable or not printable - changed "3" to "8" to get 8 lightbulbs displayed>
 <!-- Hack 2: change to 24 bits and add a color code and display color when 24 bits, think about display on this one -->
 <!-- Hack 3: do your own thing -->
 
-{% assign BITS = 8 %} <!-- changed "3" to "8" to get 8 lightbulbs displayed>
+{% assign BITS = 8 %} <!-- Liquid code; brings in sources that are not in this file -->
 
-<div class="container bg-primary">
-    <header class="pb-3 mb-4 border-bottom border-primary text-dark">
+<div class="container bg-primary"> <!-- starting here, this is the code that the browser receives -->
+    <header class="pb-3 mb-4 border-bottom border-primary text-dark"> 
         <span class="fs-4">Binary Math with Conversions</span>
     </header>
     <div class="row justify-content-md-center">
@@ -47,7 +47,7 @@ type: pbl
             <table class="table">
             <tr>
                 {% comment %}Build many bits{% endcomment %}
-                {% for i in (0..bits) %}
+                {% for i in (0..bits) %} <!-- An iteration to make the bulbs; creates a for loop around 1 bulb so you don't have to make code for 8 bulbs separately -->
                 <td><img class="img-responsive py-3" id="bulb{{ i }}" src="{{site.baseurl}}/images/bulb_off.png" alt="" width="40" height="Auto">
                     <button type="button" id="butt{{ i }}" onclick="javascript:toggleBit({{ i }})">Turn on</button>
                 </td>
@@ -64,7 +64,7 @@ type: pbl
     </div>
 </div>
 
-<script>
+<script> // variable assignments
     const BITS = {{ BITS }};
     const MAX = 2 ** BITS - 1;
     const MSG_ON = "Turn on";
@@ -73,6 +73,7 @@ type: pbl
     const IMAGE_OFF = "{{site.baseurl}}/images/bulb_off.png"
 
     // return string with current value of each bit
+    // functions
     function getBits() {
         let bits = "";
         for(let i = 0; i < BITS; i++) {
@@ -80,7 +81,7 @@ type: pbl
         }
         return bits;
     }
-    // setter for DOM values
+    // setter for DOM values; setting setConversions variable
     function setConversions(binary) {
         document.getElementById('binary').innerHTML = binary;
         // Octal conversion
@@ -92,7 +93,7 @@ type: pbl
     }
     //
     function decimal_2_base(decimal, base) {
-        let conversion = "";
+        let conversion = ""; 
         // loop to convert to base
         do {
         let digit = decimal % base;
@@ -141,7 +142,7 @@ type: pbl
         // convert the result back to binary
         binary = decimal_2_base(decimal, 2);
         // update conversions
-        setConversions(binary);
+        setConversions(binary); // used to change numbers to octal, hexidecimal, and binary
         // update bits
         for (let i = 0; i < binary.length; i++) {
         let digit = binary.substr(i, 1);
@@ -156,3 +157,7 @@ type: pbl
         }
     }
 </script>
+
+- There are two types of functions for this page: adding/subtracting, and toggling from bit to bit
+- The functions are all abstractions
+
