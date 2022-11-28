@@ -72,14 +72,14 @@ window.onload = wrap_img;
 </header>
 <main class="page-content" aria-label="Content">
       <div class="wrapper">
-        <!-- Hack 1: add a character display to text when 8 bits, determine if printable or not printable -->
+        <!-- Hack 1: add a character display to text when 8 bits, determine if printable or not printable - changed "3" to "8" to get 8 lightbulbs displayed>
 <!-- Hack 2: change to 24 bits and add a color code and display color when 24 bits, think about display on this one -->
 <!-- Hack 3: do your own thing -->
 
-<p>&lt;!– changed “3” to “8” to get 8 lightbulbs displayed&gt;</p>
+<p><!-- Liquid code; brings in sources that are not in this file --></p>
 
-<div class="container bg-primary">
-    <header class="pb-3 mb-4 border-bottom border-primary text-dark">
+<div class="container bg-primary"> <!-- starting here, this is the code that the browser receives -->
+    <header class="pb-3 mb-4 border-bottom border-primary text-dark"> 
         <span class="fs-4">Binary Math with Conversions</span>
     </header>
     <div class="row justify-content-md-center">
@@ -109,35 +109,35 @@ window.onload = wrap_img;
             <table class="table">
             <tr>
                 
-                
+                 <!-- An iteration to make the bulbs; creates a for loop around 1 bulb so you don't have to make code for 8 bulbs separately -->
                 <td><img class="img-responsive py-3" id="bulb0" src="/shreya/images/bulb_off.png" alt="" width="40" height="Auto" />
                     <button type="button" id="butt0" onclick="javascript:toggleBit(0)">Turn on</button>
                 </td>
-                
+                 <!-- An iteration to make the bulbs; creates a for loop around 1 bulb so you don't have to make code for 8 bulbs separately -->
                 <td><img class="img-responsive py-3" id="bulb1" src="/shreya/images/bulb_off.png" alt="" width="40" height="Auto" />
                     <button type="button" id="butt1" onclick="javascript:toggleBit(1)">Turn on</button>
                 </td>
-                
+                 <!-- An iteration to make the bulbs; creates a for loop around 1 bulb so you don't have to make code for 8 bulbs separately -->
                 <td><img class="img-responsive py-3" id="bulb2" src="/shreya/images/bulb_off.png" alt="" width="40" height="Auto" />
                     <button type="button" id="butt2" onclick="javascript:toggleBit(2)">Turn on</button>
                 </td>
-                
+                 <!-- An iteration to make the bulbs; creates a for loop around 1 bulb so you don't have to make code for 8 bulbs separately -->
                 <td><img class="img-responsive py-3" id="bulb3" src="/shreya/images/bulb_off.png" alt="" width="40" height="Auto" />
                     <button type="button" id="butt3" onclick="javascript:toggleBit(3)">Turn on</button>
                 </td>
-                
+                 <!-- An iteration to make the bulbs; creates a for loop around 1 bulb so you don't have to make code for 8 bulbs separately -->
                 <td><img class="img-responsive py-3" id="bulb4" src="/shreya/images/bulb_off.png" alt="" width="40" height="Auto" />
                     <button type="button" id="butt4" onclick="javascript:toggleBit(4)">Turn on</button>
                 </td>
-                
+                 <!-- An iteration to make the bulbs; creates a for loop around 1 bulb so you don't have to make code for 8 bulbs separately -->
                 <td><img class="img-responsive py-3" id="bulb5" src="/shreya/images/bulb_off.png" alt="" width="40" height="Auto" />
                     <button type="button" id="butt5" onclick="javascript:toggleBit(5)">Turn on</button>
                 </td>
-                
+                 <!-- An iteration to make the bulbs; creates a for loop around 1 bulb so you don't have to make code for 8 bulbs separately -->
                 <td><img class="img-responsive py-3" id="bulb6" src="/shreya/images/bulb_off.png" alt="" width="40" height="Auto" />
                     <button type="button" id="butt6" onclick="javascript:toggleBit(6)">Turn on</button>
                 </td>
-                
+                 <!-- An iteration to make the bulbs; creates a for loop around 1 bulb so you don't have to make code for 8 bulbs separately -->
                 <td><img class="img-responsive py-3" id="bulb7" src="/shreya/images/bulb_off.png" alt="" width="40" height="Auto" />
                     <button type="button" id="butt7" onclick="javascript:toggleBit(7)">Turn on</button>
                 </td>
@@ -168,7 +168,7 @@ window.onload = wrap_img;
     </div>
 </div>
 
-<script>
+<script> // variable assignments
     const BITS = 8;
     const MAX = 2 ** BITS - 1;
     const MSG_ON = "Turn on";
@@ -177,6 +177,7 @@ window.onload = wrap_img;
     const IMAGE_OFF = "/shreya/images/bulb_off.png"
 
     // return string with current value of each bit
+    // functions
     function getBits() {
         let bits = "";
         for(let i = 0; i < BITS; i++) {
@@ -184,7 +185,7 @@ window.onload = wrap_img;
         }
         return bits;
     }
-    // setter for DOM values
+    // setter for DOM values; setting setConversions variable
     function setConversions(binary) {
         document.getElementById('binary').innerHTML = binary;
         // Octal conversion
@@ -196,7 +197,7 @@ window.onload = wrap_img;
     }
     //
     function decimal_2_base(decimal, base) {
-        let conversion = "";
+        let conversion = ""; 
         // loop to convert to base
         do {
         let digit = decimal % base;
@@ -245,7 +246,7 @@ window.onload = wrap_img;
         // convert the result back to binary
         binary = decimal_2_base(decimal, 2);
         // update conversions
-        setConversions(binary);
+        setConversions(binary); // used to change numbers to octal, hexidecimal, and binary
         // update bits
         for (let i = 0; i < binary.length; i++) {
         let digit = binary.substr(i, 1);
@@ -260,6 +261,11 @@ window.onload = wrap_img;
         }
     }
 </script>
+
+<ul>
+  <li>There are two types of functions for this page: adding/subtracting, and toggling from bit to bit</li>
+  <li>The functions are all abstractions</li>
+</ul>
 
 
       </div>
