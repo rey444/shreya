@@ -4,21 +4,21 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>What is an Algorithm? | Shreya’s Blog</title>
+<title>3.3 - 3.4 Notes &amp; Hacks | Shreya’s Blog</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="What is an Algorithm?" />
+<meta property="og:title" content="3.3 - 3.4 Notes &amp; Hacks" />
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="This blog is a project for my APCSP class." />
 <meta property="og:description" content="This blog is a project for my APCSP class." />
-<link rel="canonical" href="https://rey444.github.io/shreya/2022/11/29/3.3-3.4-notes.html" />
-<meta property="og:url" content="https://rey444.github.io/shreya/2022/11/29/3.3-3.4-notes.html" />
+<link rel="canonical" href="https://rey444.github.io/shreya/t2notes/2022/11/29/3.3-3.4-notes.html" />
+<meta property="og:url" content="https://rey444.github.io/shreya/t2notes/2022/11/29/3.3-3.4-notes.html" />
 <meta property="og:site_name" content="Shreya’s Blog" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2022-11-29T00:00:00-06:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="What is an Algorithm?" />
+<meta property="twitter:title" content="3.3 - 3.4 Notes &amp; Hacks" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-11-29T00:00:00-06:00","datePublished":"2022-11-29T00:00:00-06:00","description":"This blog is a project for my APCSP class.","headline":"What is an Algorithm?","mainEntityOfPage":{"@type":"WebPage","@id":"https://rey444.github.io/shreya/2022/11/29/3.3-3.4-notes.html"},"url":"https://rey444.github.io/shreya/2022/11/29/3.3-3.4-notes.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-11-29T00:00:00-06:00","datePublished":"2022-11-29T00:00:00-06:00","description":"This blog is a project for my APCSP class.","headline":"3.3 - 3.4 Notes &amp; Hacks","mainEntityOfPage":{"@type":"WebPage","@id":"https://rey444.github.io/shreya/t2notes/2022/11/29/3.3-3.4-notes.html"},"url":"https://rey444.github.io/shreya/t2notes/2022/11/29/3.3-3.4-notes.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/shreya/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://rey444.github.io/shreya/feed.xml" title="Shreya's Blog" /><link rel="shortcut icon" type="image/x-icon" href="/shreya/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -73,16 +73,23 @@ window.onload = wrap_img;
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">What is an Algorithm?</h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-11-29T00:00:00-06:00" itemprop="datePublished">
+    <h1 class="post-title p-name" itemprop="name headline">3.3 - 3.4 Notes &amp; Hacks</h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-11-29T00:00:00-06:00" itemprop="datePublished">
         Nov 29, 2022
       </time>
        • <span class="read-time" title="Estimated read time">
     
     
-      3 min read
+      4 min read
     
 </span></p>
 
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/shreya/categories/#t2notes">t2notes</a>
+        
+      
+      </p>
     
 
     
@@ -116,7 +123,27 @@ window.onload = wrap_img;
       </header>
 
   <div class="post-content e-content" itemprop="articleBody">
-    <!--
+    <ul id="toc" class="section-nav">
+<li class="toc-entry toc-h1"><a href="#What-is-an-Algorithm?">What is an Algorithm? </a></li>
+<li class="toc-entry toc-h1"><a href="#3-Components-of-an-Algorithm">3 Components of an Algorithm </a></li>
+<li class="toc-entry toc-h1"><a href="#Representing-Algorithms">Representing Algorithms </a></li>
+<li class="toc-entry toc-h1"><a href="#Arithmetic-Operations">Arithmetic Operations </a></li>
+<li class="toc-entry toc-h1"><a href="#Application-of-Mathematical-Expressions">Application of Mathematical Expressions </a></li>
+<li class="toc-entry toc-h1"><a href="#Variables">Variables </a></li>
+<li class="toc-entry toc-h1"><a href="#Strings">Strings </a>
+<ul>
+<li class="toc-entry toc-h2"><a href="#String-Commands-for-AP-Exam-Pseudocode">String Commands for AP Exam Pseudocode </a></li>
+<li class="toc-entry toc-h2"><a href="#String-Concatenation">String Concatenation </a></li>
+<li class="toc-entry toc-h2"><a href="#Substrings">Substrings </a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h1"><a href="#Hacks">Hacks </a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#Algorithms-&-Flowcharts-Hack-Link">Algorithms &amp; Flowcharts Hack Link </a></li>
+<li class="toc-entry toc-h3"><a href="#Variables-Hacks">Variables Hacks </a></li>
+</ul>
+</li>
+</ul><!--
 #################################################
 ### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
 #################################################
@@ -125,13 +152,43 @@ window.onload = wrap_img;
 
 <div class="container" id="notebook-container">
         
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Arithmetic-Operations">Arithmetic Operations<a class="anchor-link" href="#Arithmetic-Operations"> </a></h1>
+<h1 id="What-is-an-Algorithm?">
+<a class="anchor" href="#What-is-an-Algorithm?" aria-hidden="true"><span class="octicon octicon-link"></span></a>What is an Algorithm?<a class="anchor-link" href="#What-is-an-Algorithm?"> </a>
+</h1>
+<p>a set of instructions that can accomplish a specific task</p>
+<h1 id="3-Components-of-an-Algorithm">
+<a class="anchor" href="#3-Components-of-an-Algorithm" aria-hidden="true"><span class="octicon octicon-link"></span></a>3 Components of an Algorithm<a class="anchor-link" href="#3-Components-of-an-Algorithm"> </a>
+</h1>
+<ol>
+<li>Sequencing: Algorithms do tasks in the order of specification.</li>
+<li>Selection: Helps choose two different outcomes based off a decision.</li>
+<li>Iteration: If a condition is true, then the code can repeat.</li>
+</ol>
+<h1 id="Representing-Algorithms">
+<a class="anchor" href="#Representing-Algorithms" aria-hidden="true"><span class="octicon octicon-link"></span></a>Representing Algorithms<a class="anchor-link" href="#Representing-Algorithms"> </a>
+</h1>
+<ol>
+<li>Flowcharts: Use shapes and arrows to represent the steps of an algorithm.</li>
+<li>Pseudocode: A blend of human language and coding format.</li>
+</ol>
+
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Arithmetic-Operations">
+<a class="anchor" href="#Arithmetic-Operations" aria-hidden="true"><span class="octicon octicon-link"></span></a>Arithmetic Operations<a class="anchor-link" href="#Arithmetic-Operations"> </a>
+</h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Subtraction</strong> - represented by "-"</p>
 
@@ -155,7 +212,8 @@ window.onload = wrap_img;
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Addition</strong> - Represented by "+"</p>
 
@@ -179,7 +237,8 @@ window.onload = wrap_img;
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Multiplication</strong> - Represented by “*”</p>
 
@@ -203,7 +262,8 @@ window.onload = wrap_img;
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Division</strong> - Represented by “/”</p>
 
@@ -227,7 +287,8 @@ window.onload = wrap_img;
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Getting the Remainder</strong> - Represented by “MOD” (% in python)</p>
 
@@ -251,23 +312,29 @@ window.onload = wrap_img;
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Application-of-Mathematical-Expressions">Application of Mathematical Expressions<a class="anchor-link" href="#Application-of-Mathematical-Expressions"> </a></h1>
+<h1 id="Application-of-Mathematical-Expressions">
+<a class="anchor" href="#Application-of-Mathematical-Expressions" aria-hidden="true"><span class="octicon octicon-link"></span></a>Application of Mathematical Expressions<a class="anchor-link" href="#Application-of-Mathematical-Expressions"> </a>
+</h1>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><div class="flash">
-    <svg class="octicon octicon-info" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1.5a6.5 6.5 0 100 13 6.5 6.5 0 000-13zM0 8a8 8 0 1116 0A8 8 0 010 8zm6.5-.25A.75.75 0 017.25 7h1a.75.75 0 01.75.75v2.75h.25a.75.75 0 010 1.5h-2a.75.75 0 010-1.5h.25v-2h-.25a.75.75 0 01-.75-.75zM8 6a1 1 0 100-2 1 1 0 000 2z"></path></svg>
+<p></p>
+<div class="flash">
+    <svg class="octicon octicon-info" viewbox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 1.5a6.5 6.5 0 100 13 6.5 6.5 0 000-13zM0 8a8 8 0 1116 0A8 8 0 010 8zm6.5-.25A.75.75 0 017.25 7h1a.75.75 0 01.75.75v2.75h.25a.75.75 0 010 1.5h-2a.75.75 0 010-1.5h.25v-2h-.25a.75.75 0 01-.75-.75zM8 6a1 1 0 100-2 1 1 0 000 2z"></path></svg>
     <strong>Note: </strong>collegeboard pseudocode starts at 1
-</div></p>
+</div>
 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ol>
 <li>items can be numbers or variables</li>
@@ -283,7 +350,7 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">num1</span> <span class="o">=</span> <span class="mi">10</span> <span class="c1"># &quot;num1&quot;, &quot;num2&quot;, etc. are variables</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">num1</span> <span class="o">=</span> <span class="mi">10</span> <span class="c1"># "num1", "num2", etc. are variables</span>
 <span class="n">num2</span> <span class="o">=</span> <span class="n">num1</span> <span class="o">-</span> <span class="mi">25</span> <span class="c1"># we can perform mathematical expressions on the variables as well</span>
 <span class="n">num3</span> <span class="o">=</span> <span class="mi">100</span> <span class="o">*</span> <span class="n">num1</span>
 <span class="n">num4</span> <span class="o">=</span> <span class="n">num1</span> <span class="o">/</span> <span class="n">num2</span>
@@ -297,7 +364,8 @@ window.onload = wrap_img;
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <ol>
 <li>order of operations (same as in normal math)</li>
@@ -338,9 +406,13 @@ window.onload = wrap_img;
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Variables">Variables<a class="anchor-link" href="#Variables"> </a></h1><p><strong>4 Different Ways to Store Variables</strong></p>
+<h1 id="Variables">
+<a class="anchor" href="#Variables" aria-hidden="true"><span class="octicon octicon-link"></span></a>Variables<a class="anchor-link" href="#Variables"> </a>
+</h1>
+<p><strong>4 Different Ways to Store Variables</strong></p>
 <ol>
 <li>Numerical value stored in a variable </li>
 </ol>
@@ -361,7 +433,8 @@ window.onload = wrap_img;
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Sequencing</strong></p>
 <ul>
@@ -403,7 +476,8 @@ window.onload = wrap_img;
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Tracking Variables - AP Exam Question</strong></p>
 <ul>
@@ -430,7 +504,7 @@ window.onload = wrap_img;
 <span class="n">var3</span> <span class="o">=</span> <span class="p">(</span><span class="n">var1</span> <span class="o">+</span> <span class="n">var2</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span>
 <span class="n">var2</span> <span class="o">=</span> <span class="mi">6</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="n">var1</span><span class="p">)</span> <span class="c1"># question would ask something like, what&#39;s the value of var1, var2, and var3</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">var1</span><span class="p">)</span> <span class="c1"># question would ask something like, what's the value of var1, var2, and var3</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">var2</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">var3</span><span class="p">)</span>
 </pre></div>
@@ -458,9 +532,13 @@ window.onload = wrap_img;
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Strings">Strings<a class="anchor-link" href="#Strings"> </a></h1><ul>
+<h1 id="Strings">
+<a class="anchor" href="#Strings" aria-hidden="true"><span class="octicon octicon-link"></span></a>Strings<a class="anchor-link" href="#Strings"> </a>
+</h1>
+<ul>
 <li>A string is a collection of characters. What is a character as character can be anything from numbers, letters, spaces, special symbols, etc</li>
 <li>Certain procedures may be used with strings and they vary from programming language to language Python examples</li>
 </ul>
@@ -468,19 +546,28 @@ window.onload = wrap_img;
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="String-Commands-for-AP-Exam-Pseudocode">String Commands for AP Exam Pseudocode<a class="anchor-link" href="#String-Commands-for-AP-Exam-Pseudocode"> </a></h2><ul>
-<li><strong>len()</strong> to find the length of a string</li>
-<li><strong>lower()</strong> to convert to lowercase</li>
-<li><strong>concat()</strong> returns a string made up of the concatenated </li>
-<li><strong>substring()</strong> returns the characters from the string beginning at the at the first position to the last</li>
+<h2 id="String-Commands-for-AP-Exam-Pseudocode">
+<a class="anchor" href="#String-Commands-for-AP-Exam-Pseudocode" aria-hidden="true"><span class="octicon octicon-link"></span></a>String Commands for AP Exam Pseudocode<a class="anchor-link" href="#String-Commands-for-AP-Exam-Pseudocode"> </a>
+</h2>
+<ul>
+<li>
+<strong>len()</strong> to find the length of a string</li>
+<li>
+<strong>lower()</strong> to convert to lowercase</li>
+<li>
+<strong>concat()</strong> returns a string made up of the concatenated </li>
+<li>
+<strong>substring()</strong> returns the characters from the string beginning at the at the first position to the last</li>
 </ul>
 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Substring Example</strong></p>
 
@@ -494,7 +581,7 @@ window.onload = wrap_img;
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">substring</span><span class="p">(</span><span class="s2">&quot;abcdefghijkl&quot;</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span> <span class="n">would</span> <span class="nb">print</span> <span class="n">bcde</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">substring</span><span class="p">(</span><span class="s2">"abcdefghijkl"</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span> <span class="n">would</span> <span class="nb">print</span> <span class="n">bcde</span>
 </pre></div>
 
     </div>
@@ -504,9 +591,13 @@ window.onload = wrap_img;
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="String-Concatenation">String Concatenation<a class="anchor-link" href="#String-Concatenation"> </a></h2><ul>
+<h2 id="String-Concatenation">
+<a class="anchor" href="#String-Concatenation" aria-hidden="true"><span class="octicon octicon-link"></span></a>String Concatenation<a class="anchor-link" href="#String-Concatenation"> </a>
+</h2>
+<ul>
 <li>combining 2 or more strings to make a new strings in order to create a new string</li>
 </ul>
 <p><strong>Example of String Concatenation</strong></p>
@@ -515,9 +606,13 @@ window.onload = wrap_img;
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Substrings">Substrings<a class="anchor-link" href="#Substrings"> </a></h2><ul>
+<h2 id="Substrings">
+<a class="anchor" href="#Substrings" aria-hidden="true"><span class="octicon octicon-link"></span></a>Substrings<a class="anchor-link" href="#Substrings"> </a>
+</h2>
+<ul>
 <li>a part of an already existing string</li>
 </ul>
 <p><strong>Example of Substrings</strong></p>
@@ -526,9 +621,18 @@ window.onload = wrap_img;
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Hacks">Hacks<a class="anchor-link" href="#Hacks"> </a></h1><h3 id="Algorithms-&amp;-Flowcharts-Hack-Link"><a href="https://jamboard.google.com/d/1qpPFYt9cyjJOSzpT4ODND8Jj6gk8DUWPbLAksaOTCvA/viewer?f=10&amp;pli=1">Algorithms &amp; Flowcharts Hack Link</a><a class="anchor-link" href="#Algorithms-&amp;-Flowcharts-Hack-Link"> </a></h3><h3 id="Variables-Hacks">Variables Hacks<a class="anchor-link" href="#Variables-Hacks"> </a></h3>
+<h1 id="Hacks">
+<a class="anchor" href="#Hacks" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hacks<a class="anchor-link" href="#Hacks"> </a>
+</h1>
+<h3 id="Algorithms-&amp;-Flowcharts-Hack-Link">
+<a class="anchor" href="#Algorithms-&amp;-Flowcharts-Hack-Link" aria-hidden="true"><span class="octicon octicon-link"></span></a><a href="https://jamboard.google.com/d/1qpPFYt9cyjJOSzpT4ODND8Jj6gk8DUWPbLAksaOTCvA/viewer?f=10&amp;pli=1">Algorithms &amp; Flowcharts Hack Link</a><a class="anchor-link" href="#Algorithms-&amp;-Flowcharts-Hack-Link"> </a>
+</h3>
+<h3 id="Variables-Hacks">
+<a class="anchor" href="#Variables-Hacks" aria-hidden="true"><span class="octicon octicon-link"></span></a>Variables Hacks<a class="anchor-link" href="#Variables-Hacks"> </a>
+</h3>
 </div>
 </div>
 </div>
@@ -540,10 +644,84 @@ window.onload = wrap_img;
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">Num1</span> <span class="o">=</span> <span class="mi">50</span> <span class="c1"># define Num1 as 50</span>
-<span class="n">Num2</span> <span class="o">=</span> <span class="n">Num1</span> <span class="o">%</span> <span class="mi">9</span> <span class="o">+</span> <span class="mi">15</span> 
-<span class="n">Num3</span> <span class="o">=</span> <span class="n">Num2</span> <span class="o">/</span> <span class="n">Num1</span> <span class="o">+</span> <span class="p">(</span> <span class="n">Num2</span> <span class="o">*</span> <span class="mi">2</span> <span class="p">)</span>
-<span class="n">Num4</span> <span class="o">=</span> <span class="n">Num3</span> <span class="o">+</span> <span class="n">Num1</span> <span class="o">/</span> <span class="mi">5</span> <span class="o">-</span> <span class="mi">10</span>
-<span class="n">Result</span> <span class="o">=</span> <span class="n">Num4</span> <span class="o">-</span> <span class="n">Num2</span>
+<span class="n">Num2</span> <span class="o">=</span> <span class="n">Num1</span> <span class="o">%</span> <span class="mi">9</span> <span class="o">+</span> <span class="mi">15</span>  <span class="c1">#  5 + 15 = 20, num2 = 20</span>
+<span class="n">Num3</span> <span class="o">=</span> <span class="n">Num2</span> <span class="o">/</span> <span class="n">Num1</span> <span class="o">+</span> <span class="p">(</span> <span class="n">Num2</span> <span class="o">*</span> <span class="mi">2</span> <span class="p">)</span> <span class="c1"># 20/50 + (20*2) = 20/50 + 40 = 40.4 = num3</span>
+<span class="n">Num4</span> <span class="o">=</span> <span class="n">Num3</span> <span class="o">+</span> <span class="n">Num1</span> <span class="o">/</span> <span class="mi">5</span> <span class="o">-</span> <span class="mi">10</span> <span class="c1"># 40.4 + 50/5 - 10 = 40.4 = num4</span>
+<span class="n">Result</span> <span class="o">=</span> <span class="n">Num4</span> <span class="o">-</span> <span class="n">Num2</span> <span class="c1"># 40.4 - 20 = 20.4 = Result --&gt; the result should be 20.4</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">Result</span><span class="p">)</span> <span class="c1"># checking work</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>20.4
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">Num1</span> <span class="o">=</span> <span class="mi">10</span> <span class="c1"># set Num1 as 10</span>
+<span class="n">Num2</span> <span class="o">=</span> <span class="n">Num1</span> <span class="o">%</span> <span class="mi">3</span> <span class="o">*</span> <span class="mi">4</span> <span class="c1"># 10/3 is 3R3 --? 3*4 = 12 --&gt; Num2 = 12</span>
+<span class="n">Num1</span> <span class="o">=</span> <span class="n">Num2</span> <span class="c1"># Num1 = 12</span>
+<span class="n">Num3</span> <span class="o">=</span> <span class="n">Num1</span> <span class="o">*</span> <span class="mi">3</span> <span class="c1"># 12*3 = 36 --&gt; Num3 = 36</span>
+<span class="n">Result</span> <span class="o">=</span> <span class="n">Num3</span> <span class="o">%</span> <span class="mi">2</span> <span class="c1"># 36/2 = 18R0 --&gt; Result = 0</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">Result</span><span class="p">)</span> <span class="c1"># checking work</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>0
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">valueA</span> <span class="o">=</span> <span class="mi">4</span>
+<span class="n">valueB</span> <span class="o">=</span> <span class="mi">90</span>
+<span class="n">valueC</span> <span class="o">=</span> <span class="mi">17</span>
+<span class="n">valueB</span> <span class="o">=</span> <span class="n">valueC</span> <span class="o">-</span> <span class="n">valueA</span>
+<span class="n">valueA</span> <span class="o">=</span> <span class="n">valueA</span> <span class="o">*</span> <span class="mi">10</span>
+<span class="k">if</span> <span class="n">valueB</span> <span class="o">&gt;</span> <span class="mi">10</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">valueC</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -557,7 +735,15 @@ window.onload = wrap_img;
 
 
 
-  </div><a class="u-url" href="/shreya/2022/11/29/3.3-3.4-notes.html" hidden></a>
+  </div><!-- from https://github.com/utterance/utterances -->
+<script src="https://utteranc.es/client.js"
+        repo="rey444/shreya"
+        issue-term="title"
+        label="blogpost-comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script><a class="u-url" href="/shreya/t2notes/2022/11/29/3.3-3.4-notes.html" hidden></a>
 </article>
 
       </div>
