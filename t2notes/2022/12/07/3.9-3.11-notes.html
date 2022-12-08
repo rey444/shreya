@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>3.9 &amp; 3.11 Notes | Shreya’s Blog</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="3.9 &amp; 3.11 Notes" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="This blog is a project for my APCSP class." />
+<meta property="og:description" content="This blog is a project for my APCSP class." />
+<link rel="canonical" href="https://rey444.github.io/shreya/t2notes/2022/12/07/3.9-3.11-notes.html" />
+<meta property="og:url" content="https://rey444.github.io/shreya/t2notes/2022/12/07/3.9-3.11-notes.html" />
+<meta property="og:site_name" content="Shreya’s Blog" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-12-07T00:00:00-06:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="3.9 &amp; 3.11 Notes" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-12-07T00:00:00-06:00","datePublished":"2022-12-07T00:00:00-06:00","description":"This blog is a project for my APCSP class.","headline":"3.9 &amp; 3.11 Notes","mainEntityOfPage":{"@type":"WebPage","@id":"https://rey444.github.io/shreya/t2notes/2022/12/07/3.9-3.11-notes.html"},"url":"https://rey444.github.io/shreya/t2notes/2022/12/07/3.9-3.11-notes.html"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/shreya/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://rey444.github.io/shreya/feed.xml" title="Shreya's Blog" /><link rel="shortcut icon" type="image/x-icon" href="/shreya/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+<script>
+function wrap_img(fn) {
+    if (document.attachEvent ? document.readyState === "complete" : document.readyState !== "loading") {
+        var elements = document.querySelectorAll(".post img");
+        Array.prototype.forEach.call(elements, function(el, i) {
+            if (el.getAttribute("title") && (el.className != "emoji")) {
+                const caption = document.createElement('figcaption');
+                var node = document.createTextNode(el.getAttribute("title"));
+                caption.appendChild(node);
+                const wrapper = document.createElement('figure');
+                wrapper.className = 'image';
+                el.parentNode.insertBefore(wrapper, el);
+                el.parentNode.removeChild(el);
+                wrapper.appendChild(el);
+                wrapper.appendChild(caption);
+            }
+        });
+    } else { document.addEventListener('DOMContentLoaded', fn); }
+}
+window.onload = wrap_img;
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+    // add link icon to anchor tags
+    var elem = document.querySelectorAll(".anchor-link")
+    elem.forEach(e => (e.innerHTML = '<i class="fas fa-link fa-xs"></i>'));
+    });
+</script>
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/shreya/">Shreya&#39;s Blog</a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/shreya/about/">About Me</a><a class="page-link" href="/shreya/Trimester%201">Trimester 1</a><a class="page-link" href="/shreya/javascript-work/">JavaScript</a><a class="page-link" href="/shreya/search/">Search</a><a class="page-link" href="/shreya/categories/">Tags</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">3.9 &amp; 3.11 Notes</h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-12-07T00:00:00-06:00" itemprop="datePublished">
+        Dec 7, 2022
+      </time>
+       • <span class="read-time" title="Estimated read time">
+    
+    
+      5 min read
+    
+</span></p>
+
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/shreya/categories/#t2notes">t2notes</a>
+        
+      
+      </p>
+    
+
+    
+      
+        <div class="pb-5 d-flex flex-justify-center">
+          <div class="px-2">
+
+    <a href="https://github.com/rey444/shreya/tree/master/_notebooks/2022-12-07-3.9-3.11-notes.ipynb" role="button" target="_blank">
+<img class="notebook-badge-image" src="/shreya/assets/badges/github.svg" alt="View On GitHub">
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://mybinder.org/v2/gh/rey444/shreya/master?filepath=_notebooks%2F2022-12-07-3.9-3.11-notes.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/shreya/assets/badges/binder.svg" alt="Open In Binder"/>
+    </a>
+</div>
+
+          <div class="px-2">
+    <a href="https://colab.research.google.com/github/rey444/shreya/blob/master/_notebooks/2022-12-07-3.9-3.11-notes.ipynb" target="_blank">
+        <img class="notebook-badge-image" src="/shreya/assets/badges/colab.svg" alt="Open In Colab"/>
+    </a>
+</div>
+          <div class="px-2">
+  <a href="https://deepnote.com/launch?url=https%3A%2F%2Fgithub.com%2Frey444%2Fshreya%2Fblob%2Fmaster%2F_notebooks%2F2022-12-07-3.9-3.11-notes.ipynb" target="_blank">
+      <img class="notebook-badge-image" src="/shreya/assets/badges/deepnote.svg" alt="Launch in Deepnote"/>
+  </a>
+</div>
+
+        </div>
+      </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <ul id="toc" class="section-nav">
+<li class="toc-entry toc-h2"><a href="#Algorithms">Algorithms </a></li>
+<li class="toc-entry toc-h2"><a href="#Conditionals-vs.-Booleans">Conditionals vs. Booleans </a></li>
+<li class="toc-entry toc-h2"><a href="#Flowcharts">Flowcharts </a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#How-to-Set-up-a-Flowchart">How to Set up a Flowchart </a></li>
+<li class="toc-entry toc-h3"><a href="#Selection-vs.-Iteration">Selection vs. Iteration </a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#Combining-Algorithms">Combining Algorithms </a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#Rules-of-Collatz-Conjecture">Rules of Collatz Conjecture </a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#Binary-Search-Algorithm">Binary Search Algorithm </a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#How-Binary-Search-Works">How Binary Search Works </a></li>
+<li class="toc-entry toc-h3"><a href="#binary_search()-Function">binary_search() Function </a></li>
+</ul>
+</li>
+</ul><!--
+#################################################
+### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
+#################################################
+# file to edit: _notebooks/2022-12-07-3.9-3.11-notes.ipynb
+-->
+
+<div class="container" id="notebook-container">
+        
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Algorithms">
+<a class="anchor" href="#Algorithms" aria-hidden="true"><span class="octicon octicon-link"></span></a>Algorithms<a class="anchor-link" href="#Algorithms"> </a>
+</h2>
+<ul>
+<li>An algorithm is a process or set of rules to be followed through CODE</li>
+<li>Set limitations</li>
+<li>can be written in different ways and still accomplish the same tasks</li>
+<li>Algorithms that appear similar can yield different side effects or results.</li>
+<li>Some conditional statements can be written as the same as Boolean expressions (VICE VERSA)</li>
+<li>Different algorithms can be developed or use to solve the same problem</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">temp</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">"Select a temperature from 0 to 99 degrees F"</span><span class="p">))</span>
+<span class="k">if</span> <span class="p">(</span><span class="n">temp</span> <span class="o">&gt;=</span> <span class="mi">90</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"It's too hot outside!"</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">temp</span> <span class="o">&gt;=</span> <span class="mi">65</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Sure I will play outside!"</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span> 
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"It is too cold outside!"</span><span class="p">)</span>
+<span class="c1"># Input 54 and then 95, what do you notice?</span>
+<span class="c1"># when I inputted 54, the output was "It is too cold outside!"</span>
+<span class="c1"># when I inputted 95, the output was "It is too hot outside!"</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>It's too hot outside!
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">temp</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">"Select a temperature from 0 to 99 degrees F"</span><span class="p">))</span>
+<span class="k">if</span> <span class="p">(</span><span class="n">temp</span> <span class="o">&gt;=</span> <span class="mi">90</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"It's too hot outside!"</span><span class="p">)</span>
+<span class="k">if</span> <span class="p">(</span><span class="n">temp</span> <span class="o">&gt;=</span> <span class="mi">65</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Sure I will play outside!"</span><span class="p">)</span>
+<span class="k">if</span> <span class="p">(</span><span class="n">temp</span> <span class="o">&lt;</span> <span class="mi">65</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"It is too cold outside!"</span><span class="p">)</span>
+    <span class="c1"># Input 54 and then Input 95, what do you notice?</span>
+<span class="c1"># # when I inputted 54, the output was "It is too cold outside!"</span>
+<span class="c1"># when I inputted 95, the output was "It is too hot outside!" AND "Sure I will play outside!"</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>It's too hot outside!
+Sure I will play outside!
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Conditionals-vs.-Booleans">
+<a class="anchor" href="#Conditionals-vs.-Booleans" aria-hidden="true"><span class="octicon octicon-link"></span></a>Conditionals vs. Booleans<a class="anchor-link" href="#Conditionals-vs.-Booleans"> </a>
+</h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>First Block</strong></p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">sum</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">counter</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="c1">#iteration</span>
+<span class="n">var</span> <span class="o">=</span> <span class="mi">0</span> 
+<span class="k">while</span> <span class="p">(</span><span class="n">var</span> <span class="o">&lt;</span> <span class="mi">4</span><span class="p">):</span> <span class="c1">#while the var is &lt;= 4, it executes those commands, once it exceeds it hits the else command</span>
+    <span class="nb">sum</span> <span class="o">=</span> <span class="nb">sum</span> <span class="o">+</span> <span class="n">counter</span>
+    <span class="n">counter</span> <span class="o">=</span> <span class="n">counter</span> <span class="o">+</span> <span class="mi">2</span>
+    <span class="n">var</span> <span class="o">=</span> <span class="n">var</span> <span class="o">+</span> <span class="mi">1</span>
+    <span class="c1"># now go through the whole thing 4 times, this is an iteration, a vital part of algorithms.</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="nb">sum</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>25
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Second Block</strong></p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">sum</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">counter</span> <span class="o">=</span> <span class="mi">9</span>
+<span class="c1">#iteration</span>
+<span class="k">while</span> <span class="p">(</span><span class="n">counter</span> <span class="o">&gt;=</span> <span class="mi">1</span><span class="p">):</span> 
+    <span class="nb">sum</span> <span class="o">=</span> <span class="nb">sum</span> <span class="o">+</span> <span class="n">counter</span>
+    <span class="n">counter</span> <span class="o">=</span> <span class="n">counter</span> <span class="o">-</span> <span class="mi">2</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">sum</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>25
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Flowcharts">
+<a class="anchor" href="#Flowcharts" aria-hidden="true"><span class="octicon octicon-link"></span></a>Flowcharts<a class="anchor-link" href="#Flowcharts"> </a>
+</h2>
+<ul>
+<li>help us visualize the functionality of an algorithm</li>
+<li>good way to double check whether or not the algorithm is achieving its purpose</li>
+</ul>
+<h3 id="How-to-Set-up-a-Flowchart">
+<a class="anchor" href="#How-to-Set-up-a-Flowchart" aria-hidden="true"><span class="octicon octicon-link"></span></a>How to Set up a Flowchart<a class="anchor-link" href="#How-to-Set-up-a-Flowchart"> </a>
+</h3>
+<ol>
+<li>
+<p>label the start point</p>
+</li>
+<li>
+<p>Define any and all variables you may need</p>
+</li>
+<li>
+<p>Consider the first question you want the algorithm to ask</p>
+</li>
+<li>
+<p>Write what you want the algorithm to do if the answer to that question is yes (or true)</p>
+</li>
+<li>
+<p>Write what you want the algorithm to do if the answer to that question is no (or false)</p>
+<blockquote>
+<p>Steps 3-5 are the steps to creating code that uses a process called selection (you can convert the question from step 3 to a conditional if-statement in code)</p>
+</blockquote>
+</li>
+<li>
+<p>Write out all necessary steps for the algorithm to function properly</p>
+</li>
+<li>
+<p>You may want your algorithm to iterate some steps until a condition is met</p>
+</li>
+</ol>
+<blockquote>
+<p>You can write the steps that need to be repeated, then draw an arrow from the last step to a step above that contains a conditional statement</p>
+</blockquote>
+<ol>
+<li>Determine a way to reach the end goal</li>
+</ol>
+<h3 id="Selection-vs.-Iteration">
+<a class="anchor" href="#Selection-vs.-Iteration" aria-hidden="true"><span class="octicon octicon-link"></span></a>Selection vs. Iteration<a class="anchor-link" href="#Selection-vs.-Iteration"> </a>
+</h3>
+<p><strong>Selection</strong></p>
+<ul>
+<li>A process used in algorithms where a conditional if-statement leads to one of two outcomes<ul>
+<li>Outcome 1:if the conditional statement is true, something will happen    - Outcome 2: if the conditional statement is false, something else will happen</li>
+</ul>
+</li>
+</ul>
+<p><strong>Iteration</strong></p>
+<ul>
+<li>A process used in algorithms that allows certain things to happen until a condition is satisfied<ul>
+<li>Once the condition is satisfied, then an outcome is produced</li>
+<li>This can take the form of a for-loop, while-loop, and/or if-statement</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Combining-Algorithms">
+<a class="anchor" href="#Combining-Algorithms" aria-hidden="true"><span class="octicon octicon-link"></span></a>Combining Algorithms<a class="anchor-link" href="#Combining-Algorithms"> </a>
+</h2>
+<blockquote>
+<p>benefit of combining algorithms:can reduce development time, testing time, and simplify the identification of errors</p>
+<h3 id="Rules-of-Collatz-Conjecture">
+<a class="anchor" href="#Rules-of-Collatz-Conjecture" aria-hidden="true"><span class="octicon octicon-link"></span></a>Rules of Collatz Conjecture<a class="anchor-link" href="#Rules-of-Collatz-Conjecture"> </a>
+</h3>
+</blockquote>
+<ol>
+<li>start with any positive integer</li>
+<li>if the preceding term is even; divide by 2</li>
+<li>if the preceding term is odd; multiply by 3 and add 1</li>
+<li>repeat steps until you arrive at 1</li>
+<li>the sequence should ALWAYS end up at 1 if repeated.</li>
+</ol>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Algorithm to Start (Determining Whether a Number is Even or Odd)</strong></p>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">"choose value for x"</span><span class="p">)</span>
+
+<span class="n">varx</span><span class="o">=</span><span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">"Enter any positive Integer"</span><span class="p">))</span>
+
+<span class="k">if</span> <span class="p">(</span><span class="n">varx</span> <span class="o">%</span><span class="k">2</span> == 0):
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"the number is even"</span><span class="p">)</span>
+
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"the number is odd"</span><span class="p">)</span>
+<span class="c1"># Run this cell to see how it works</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>choose value for x
+the number is odd
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Binary-Search-Algorithm">
+<a class="anchor" href="#Binary-Search-Algorithm" aria-hidden="true"><span class="octicon octicon-link"></span></a>Binary Search Algorithm<a class="anchor-link" href="#Binary-Search-Algorithm"> </a>
+</h2>
+<ul>
+<li>a search algorithm that finds the position of a target value within a sorted array</li>
+<li>compares the target value to the middle element of the array.</li>
+<li>algorithm for iterating to find a value inside a data set</li>
+<li>starts in the middle of a data set of numbers and eliminates half the data. This process repeats until the desired value is found or until all elements have been eliminated</li>
+<li>In order to use binary search effectively and properly, data must be stored in order</li>
+<li>must set numbers in an increasing or decreasing order</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="How-Binary-Search-Works">
+<a class="anchor" href="#How-Binary-Search-Works" aria-hidden="true"><span class="octicon octicon-link"></span></a>How Binary Search Works<a class="anchor-link" href="#How-Binary-Search-Works"> </a>
+</h3>
+<p><em>Binary Search finds the desired element by continuously chopping the search area in half</em></p>
+<p><strong>Example</strong></p>
+<p>[a b c d e f g h] , we are looking for the element <code>f</code></p>
+<ol>
+<li>start in the middle at element <code>d</code>
+</li>
+<li>our target element is greater than <code>d</code>, so we will eliminate everything to the left of <code>d</code> including <code>d</code>
+</li>
+</ol>
+<p><code>[a b c d e f g h]</code> --&gt; <code>[e f g h]</code></p>
+<ol>
+<li>chop in half again, and when we iterate through we'll have to eliminate <code>g</code> and <code>h</code>
+</li>
+<li>eliminate <code>g</code> and <code>h</code>
+</li>
+</ol>
+<p><code>[e f g h]</code> --&gt; <code>[e f]</code></p>
+<ol>
+<li>chop in half again to get the desired element</li>
+</ol>
+<p><code>[e f]</code> --&gt; <code>[f]</code></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="binary_search()-Function">
+<a class="anchor" href="#binary_search()-Function" aria-hidden="true"><span class="octicon octicon-link"></span></a>binary_search() Function<a class="anchor-link" href="#binary_search()-Function"> </a>
+</h3>
+<ul>
+<li>Made up of 2 arguments:<ul>
+<li>A list to be sorted</li>
+<li>A number to be searched</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">BinarySearch</span><span class="p">(</span><span class="n">array</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">low</span><span class="p">,</span> <span class="n">high</span><span class="p">):</span>
+
+    <span class="c1"># Repeat until the pointers low and high meet each other </span>
+    <span class="k">while</span> <span class="n">low</span> <span class="o">&lt;=</span> <span class="n">high</span><span class="p">:</span>
+
+        <span class="n">mid</span> <span class="o">=</span> <span class="n">low</span> <span class="o">+</span> <span class="p">(</span><span class="n">high</span> <span class="o">-</span> <span class="n">low</span><span class="p">)</span><span class="o">//</span><span class="mi">2</span> <span class="c1"># find the middle (taking the higest index number plus the lowest and divided by two)</span>
+
+        <span class="k">if</span> <span class="n">array</span><span class="p">[</span><span class="n">mid</span><span class="p">]</span> <span class="o">==</span> <span class="n">x</span><span class="p">:</span> <span class="c1"># if desired number is the middle is found return desired number (middle number) </span>
+            <span class="k">return</span> <span class="n">mid</span>
+
+        <span class="k">elif</span> <span class="n">array</span><span class="p">[</span><span class="n">mid</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">x</span><span class="p">:</span> 
+            <span class="n">low</span> <span class="o">=</span> <span class="n">mid</span> <span class="o">+</span> <span class="mi">1</span>
+
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">high</span> <span class="o">=</span> <span class="n">mid</span> <span class="o">-</span> <span class="mi">1</span>
+
+    <span class="k">return</span> <span class="o">-</span><span class="mi">1</span>
+
+
+<span class="n">array</span> <span class="o">=</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">]</span>
+<span class="n">x</span> <span class="o">=</span> <span class="mi">4</span>
+
+<span class="n">result</span> <span class="o">=</span> <span class="n">BinarySearch</span><span class="p">(</span><span class="n">array</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">array</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="n">result</span> <span class="o">!=</span> <span class="o">-</span><span class="mi">1</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Element is present at index "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">result</span><span class="p">))</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Not found"</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Element is present at index 1
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+</div>
+
+
+
+  </div><!-- from https://github.com/utterance/utterances -->
+<script src="https://utteranc.es/client.js"
+        repo="rey444/shreya"
+        issue-term="title"
+        label="blogpost-comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script><a class="u-url" href="/shreya/t2notes/2022/12/07/3.9-3.11-notes.html" hidden></a>
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/shreya/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/shreya/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/shreya/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>This blog is a project for my APCSP class.</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"><li>
+  <a rel="me" href="https://github.com/rey444" target="_blank" title="github">
+    <svg class="svg-icon grey">
+      <use xlink:href="/shreya/assets/minima-social-icons.svg#github"></use>
+    </svg>
+  </a>
+</li>
+<li>
+  <a rel="me" href="https://twitter.com/NighthawkCoding" target="_blank" title="twitter">
+    <svg class="svg-icon grey">
+      <use xlink:href="/shreya/assets/minima-social-icons.svg#twitter"></use>
+    </svg>
+  </a>
+</li>
+<li>
+  <a rel="me" href="https://www.youtube.com/channel/UClIKOsDS5dsfzFA3zveDT3Q" target="_blank" title="youtube">
+    <svg class="svg-icon grey">
+      <use xlink:href="/shreya/assets/minima-social-icons.svg#youtube"></use>
+    </svg>
+  </a>
+</li>
+</ul>
+</div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
