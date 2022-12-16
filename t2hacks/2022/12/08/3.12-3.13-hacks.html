@@ -133,6 +133,65 @@ window.onload = wrap_img;
 
 <div class="container" id="notebook-container">
         
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ol>
+<li>Write and call a python procedure about something which can help you in school, for example the teacher’s function we spoke about earlier.</li>
+<li>Points will be awarded based on creativity and functionality</li>
+</ol>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">quizGrade</span> <span class="o">=</span> <span class="mi">35</span> <span class="c1"># set the quiz grade that the student currently has to 35</span>
+
+<span class="k">def</span> <span class="nf">changeQuizGrade</span> <span class="p">(</span><span class="n">currentPoints</span><span class="p">):</span> <span class="c1"># procedure</span>
+    <span class="n">currentGrade</span> <span class="o">=</span> <span class="n">currentPoints</span> <span class="o">/</span> <span class="mi">40</span> <span class="c1"># divide currentPoints by 40 and set equal to currentGrade</span>
+    <span class="n">currentGrade</span> <span class="o">=</span> <span class="n">currentGrade</span> <span class="o">*</span> <span class="mi">100</span> <span class="c1"># calculate a percentage value for the current grade by multiplying currentGrade by 100</span>
+    <span class="k">return</span> <span class="n">currentGrade</span> 
+
+<span class="n">newPoints</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="nb">print</span><span class="p">(</span><span class="s2">"How many points did you get on your most recent quiz attempt, out of 40?"</span><span class="p">)))</span> <span class="c1"># get an integer input for the student's most recent test score</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">newPoints</span><span class="p">)</span> <span class="o">+</span> <span class="s2">"/40"</span><span class="p">)</span> <span class="c1"># print the student's most recent score</span>
+<span class="n">newGrade</span> <span class="o">=</span> <span class="p">(</span><span class="n">changeQuizGrade</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">newPoints</span><span class="p">)))</span> <span class="c1"># get the new grade by calling the procedure defined as changeQuizGrade</span>
+
+<span class="k">if</span> <span class="n">newPoints</span> <span class="o">&gt;</span> <span class="n">quizGrade</span><span class="p">:</span> <span class="c1"># if the new grade is greater than the student's current grade:</span>
+    <span class="n">newQuizGrade</span> <span class="o">=</span> <span class="n">newGrade</span> <span class="c1"># create a new variable for the new quiz grade, and set it equal to newGrade. which we calculated by using the procedure</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Your new grade is "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">newQuizGrade</span><span class="p">))</span> <span class="c1"># print newGrade/the most recent test score</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">"Your quiz score is still "</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">quizGrade</span><span class="p">))</span> <span class="c1"># if the latest score isn't  greater than the current score, keep the student's score the same</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>How many points did you get on your most recent quiz attempt, out of 40?
+38/40
+Your new grade is 95.0
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
 </div>
 
 
