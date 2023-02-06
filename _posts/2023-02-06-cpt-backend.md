@@ -1,20 +1,15 @@
 ---
 title: Backend Step 1 - GET Inputs
 layout: default
-description: Supports grade inputs and calculates average. 
-permalink: /frontend/grades
-image: /images/grade_calc.png
-categories: [2.C]
-tags: [javascript, html, input, onblur]
-week: 10
-type: pbl
+description: GET Inputs for CPT Project
+permalink: /backend/cpt
+categories: [t2]
+tags: [t2]
 ---
 
 <!-- For hacks take inspiration form here: https://www.rapidtables.com/calc/grade/grade-calculator.html -->
 <!-- Hack 1: change control flow to enable editing of previous element -->
 <!-- Hack 2: build a title for each score -->
-
-<!-- {% include nav_frontend.html %} -->
 
 <html>
     <h3> 1. What type of car do you wish to buy? </h3>
