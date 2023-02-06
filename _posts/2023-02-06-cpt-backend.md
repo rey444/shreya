@@ -14,7 +14,7 @@ type: pbl
 <!-- Hack 1: change control flow to enable editing of previous element -->
 <!-- Hack 2: build a title for each score -->
 
-{% include nav_frontend.html %}
+<!-- {% include nav_frontend.html %} -->
 
 <html>
     <h3> 1. What type of car do you wish to buy? </h3>
