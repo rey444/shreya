@@ -50,35 +50,41 @@ tags: [t2]
         <label for="Automatic">Automatic</label><br>
         <input type="radio" id="html" name="transmission" value="Manual">
         <label for="Manual">Manual</label><br>
-    <h3> 5. Desired Mileage (in miles per gallon; please answer if you selected plug-in hybrid, hybird, gasoline, or diesel for question 3)</h3>
-        <input type="radio" id="html" name="mileage" value="12-20 MPG">
-        <label for="12-14 MPG">12-14 MPG</label><br>
-        <input type="radio" id="html" name="mileage" value="21-30 MPG">
-        <label for="21-30 MPG">21-30 MPG</label><br>
-        <input type="radio" id="html" name="mileage" value="31-40 MPG">
-        <label for="31-40 MPG">31-40 MPG</label><br>
-        <input type="radio" id="html" name="mileage" value="41-50 MPG">
-        <label for="41-50 MPG">41-50 MPG</label><br>
-        <input type="radio" id="html" name="mileage" value="51-60 MPG">
-        <label for="51-60 MPG">51-60 MPG</label><br>
-    <h3> 6. Desired Range (in miles per charge; please answer if you selected electric for question 3)</h3>
-        <input type="radio" id="html" name="range" value="100-150 Miles">
-        <label for="100-150 Miles">100-150 Miles</label><br>
-        <input type="radio" id="html" name="range" value="151-200 Miles">
-        <label for="151-200 Miles">151-200 Miles</label><br>
-        <input type="radio" id="html" name="range" value="201-250 Miles">
-        <label for="201-250 Miles">201-250 Miles</label><br>
-        <input type="radio" id="html" name="range" value="251-300 Miles">
-        <label for="251-300 Miles">251-300 Miles</label><br>
-        <input type="radio" id="html" name="range" value="301-350 Miles">
-        <label for="301-350 Miles">301-350 Miles</label><br>
-        <input type="radio" id="html" name="range" value="351-400 Miles">
-        <label for="351-400 Miles">351-400 Miles</label><br>
-        <input type="radio" id="html" name="range" value="401-450 Miles">
-        <label for="401-450 Miles">401-450 Miles</label><br>
-        <input type="radio" id="html" name="range" value="451-500 Miles">
-        <label for="451-500 Miles">451-500 Miles</label><br>
+    <h3> 5. Desired Mileage (in miles per gallon)</h3>
+        <input type="radio" id="html" name="mileage" value="Non-Gasoline">
+        <label for="Non-Gasoline">Non-Gasoline (select if you want an electric car)</label><br>
+        <input type="radio" id="html" name="mileage" value="a">
+        <label for="a">a</label><br>
+        <input type="radio" id="html" name="mileage" value="b">
+        <label for="b">b</label><br>
+        <input type="radio" id="html" name="mileage" value="c">
+        <label for="c">c</label><br>
+    <h3> 6. Desired Range (in miles per charge)</h3>
+        <input type="radio" id="html" name="mileage" value="Non-Electric">
+        <label for="Non-Electric">Non-Electric (select if you want a gasoline car)</label><br>
+        <input type="radio" id="html" name="mileage" value="1">
+        <label for="1">1</label><br>
+        <input type="radio" id="html" name="mileage" value="2">
+        <label for="2">2</label><br>
+        <input type="radio" id="html" name="mileage" value="3">
+        <label for="3">3</label><br>
+        <input type="radio" id="html" name="mileage" value="4">
+        <label for="4">4</label><br>
     <button class="testbutton">Submit</button>
+    <table class="table-latitude">
+                <thead>
+                    <tr>
+                        <th>Type</th>
+                        <th>Seating Capacity</th> 
+                        <th>Power Source</th>
+                        <th>Transmission Type</th>
+                        <th>Mileage</th>
+                        <th>Range</th>
+                    </tr>
+                    </thead>
+                     <tbody id="result">
+                    </tbody>
+                </table>
 </html>
 
 <style>
@@ -131,7 +137,7 @@ tags: [t2]
         var input = document.createElement("input");  // input element
         var br = document.createElement("br");  // line break element
         // Setup input line attributes
-        input.setAttribute('onblur', "calculator()");
+        input.setAttribute('onblur', "calculator()"); //WIP: add in attributes for the 6 questions
         input.setAttribute('type', "text");
         input.setAttribute('name', "score");
         input.setAttribute('id', "score" + index);
