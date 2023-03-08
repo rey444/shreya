@@ -1,6 +1,6 @@
 ---
 title: Backend Step 1 - GET Inputs
-layout: default
+layout: base
 description: GET Inputs for CPT Project
 permalink: /backend/cpt
 categories: [t2]
