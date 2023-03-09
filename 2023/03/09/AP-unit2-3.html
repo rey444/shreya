@@ -260,68 +260,21 @@ window.onload = wrap_img;
 
 <div class="output_area">
 
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">ValueError</span>                                Traceback (most recent call last)
-<span class="ansi-green-intense-fg ansi-bold">/home/shreyasapkal/shreya-2/_notebooks/2023-03-09-AP-unit2-3.ipynb Cell 6</span> in <span class="ansi-cyan-fg">&lt;cell line: 2&gt;</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/shreyasapkal/shreya-2/_notebooks/2023-03-09-AP-unit2-3.ipynb#W5sdnNjb2RlLXJlbW90ZQ%3D%3D?line=0'&gt;1&lt;/a&gt;</span> # reads the JSON file and converts it to a Pandas DataFrame
-<span class="ansi-green-fg">----&gt; &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/shreyasapkal/shreya-2/_notebooks/2023-03-09-AP-unit2-3.ipynb#W5sdnNjb2RlLXJlbW90ZQ%3D%3D?line=1'&gt;2&lt;/a&gt;</span> df = pd.read_json('files/grade.json')
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/shreyasapkal/shreya-2/_notebooks/2023-03-09-AP-unit2-3.ipynb#W5sdnNjb2RlLXJlbW90ZQ%3D%3D?line=3'&gt;4&lt;/a&gt;</span> print(df)
-
-File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/site-packages/pandas/util/_decorators.py:207</span>, in <span class="ansi-cyan-fg">deprecate_kwarg.&lt;locals&gt;._deprecate_kwarg.&lt;locals&gt;.wrapper</span><span class="ansi-blue-fg">(*args, **kwargs)</span>
-<span class="ansi-green-intense-fg ansi-bold">    205</span>     else:
-<span class="ansi-green-intense-fg ansi-bold">    206</span>         kwargs[new_arg_name] = new_arg_value
-<span class="ansi-green-fg">--&gt; 207</span> return func(*args, **kwargs)
-
-File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/site-packages/pandas/util/_decorators.py:311</span>, in <span class="ansi-cyan-fg">deprecate_nonkeyword_arguments.&lt;locals&gt;.decorate.&lt;locals&gt;.wrapper</span><span class="ansi-blue-fg">(*args, **kwargs)</span>
-<span class="ansi-green-intense-fg ansi-bold">    305</span> if len(args) &gt; num_allow_args:
-<span class="ansi-green-intense-fg ansi-bold">    306</span>     warnings.warn(
-<span class="ansi-green-intense-fg ansi-bold">    307</span>         msg.format(arguments=arguments),
-<span class="ansi-green-intense-fg ansi-bold">    308</span>         FutureWarning,
-<span class="ansi-green-intense-fg ansi-bold">    309</span>         stacklevel=stacklevel,
-<span class="ansi-green-intense-fg ansi-bold">    310</span>     )
-<span class="ansi-green-fg">--&gt; 311</span> return func(*args, **kwargs)
-
-File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/site-packages/pandas/io/json/_json.py:612</span>, in <span class="ansi-cyan-fg">read_json</span><span class="ansi-blue-fg">(path_or_buf, orient, typ, dtype, convert_axes, convert_dates, keep_default_dates, numpy, precise_float, date_unit, encoding, encoding_errors, lines, chunksize, compression, nrows, storage_options)</span>
-<span class="ansi-green-intense-fg ansi-bold">    609</span>     return json_reader
-<span class="ansi-green-intense-fg ansi-bold">    611</span> with json_reader:
-<span class="ansi-green-fg">--&gt; 612</span>     return json_reader.read()
-
-File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/site-packages/pandas/io/json/_json.py:746</span>, in <span class="ansi-cyan-fg">JsonReader.read</span><span class="ansi-blue-fg">(self)</span>
-<span class="ansi-green-intense-fg ansi-bold">    744</span>         obj = self._get_object_parser(self._combine_lines(data_lines))
-<span class="ansi-green-intense-fg ansi-bold">    745</span> else:
-<span class="ansi-green-fg">--&gt; 746</span>     obj = self._get_object_parser(self.data)
-<span class="ansi-green-intense-fg ansi-bold">    747</span> self.close()
-<span class="ansi-green-intense-fg ansi-bold">    748</span> return obj
-
-File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/site-packages/pandas/io/json/_json.py:768</span>, in <span class="ansi-cyan-fg">JsonReader._get_object_parser</span><span class="ansi-blue-fg">(self, json)</span>
-<span class="ansi-green-intense-fg ansi-bold">    766</span> obj = None
-<span class="ansi-green-intense-fg ansi-bold">    767</span> if typ == "frame":
-<span class="ansi-green-fg">--&gt; 768</span>     obj = FrameParser(json, **kwargs).parse()
-<span class="ansi-green-intense-fg ansi-bold">    770</span> if typ == "series" or obj is None:
-<span class="ansi-green-intense-fg ansi-bold">    771</span>     if not isinstance(dtype, bool):
-
-File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/site-packages/pandas/io/json/_json.py:880</span>, in <span class="ansi-cyan-fg">Parser.parse</span><span class="ansi-blue-fg">(self)</span>
-<span class="ansi-green-intense-fg ansi-bold">    878</span>     self._parse_numpy()
-<span class="ansi-green-intense-fg ansi-bold">    879</span> else:
-<span class="ansi-green-fg">--&gt; 880</span>     self._parse_no_numpy()
-<span class="ansi-green-intense-fg ansi-bold">    882</span> if self.obj is None:
-<span class="ansi-green-intense-fg ansi-bold">    883</span>     return None
-
-File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/site-packages/pandas/io/json/_json.py:1133</span>, in <span class="ansi-cyan-fg">FrameParser._parse_no_numpy</span><span class="ansi-blue-fg">(self)</span>
-<span class="ansi-green-intense-fg ansi-bold">   1129</span> orient = self.orient
-<span class="ansi-green-intense-fg ansi-bold">   1131</span> if orient == "columns":
-<span class="ansi-green-intense-fg ansi-bold">   1132</span>     self.obj = DataFrame(
-<span class="ansi-green-fg">-&gt; 1133</span>         loads(json, precise_float=self.precise_float), dtype=None
-<span class="ansi-green-intense-fg ansi-bold">   1134</span>     )
-<span class="ansi-green-intense-fg ansi-bold">   1135</span> elif orient == "split":
-<span class="ansi-green-intense-fg ansi-bold">   1136</span>     decoded = {
-<span class="ansi-green-intense-fg ansi-bold">   1137</span>         str(k): v
-<span class="ansi-green-intense-fg ansi-bold">   1138</span>         for k, v in loads(json, precise_float=self.precise_float).items()
-<span class="ansi-green-intense-fg ansi-bold">   1139</span>     }
-
-<span class="ansi-red-fg">ValueError</span>: Unexpected character found when decoding 'false'</pre>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>   Student ID Year in School   GPA
+0         123             12  3.57
+1         246             10  4.00
+2         578             12  2.78
+3         469             11  3.45
+4         324         Junior  4.75
+5         313             20  3.33
+6         145             12  2.95
+7         167             10  3.90
+8         235      9th Grade  3.15
+9         nil              9  2.80
+10        469             11  3.45
+11        456             10  2.75
+</pre>
 </div>
 </div>
 
@@ -331,6 +284,14 @@ File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/site-packages/pandas/
 </div>
     
 
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>We need to clean "Junior" and "9th Grade" to a number. There is also a 20 for a year in school, which doesn't make sense. Also, there is a GPA of 4.75, and if we are not using a weighted GPA, we would have to clean this part. Also, one of the student IDs is "nil" instead of numbers, so we might need to clean that.</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -348,6 +309,11 @@ File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/site-packages/pandas/
 <h2 id="DataFrame-Extract-Column">
 <a class="anchor" href="#DataFrame-Extract-Column" aria-hidden="true"><span class="octicon octicon-link"></span></a>DataFrame Extract Column<a class="anchor-link" href="#DataFrame-Extract-Column"> </a>
 </h2>
+<blockquote>
+<p>To print two categories, just put a comma between the two categories you want to have printed:<code>'Student ID', 'GPA'</code>
+<code>print(df[['category']])</code></p>
+</blockquote>
+
 </div>
 </div>
 </div>
@@ -363,7 +329,7 @@ File <span class="ansi-green-fg">~/anaconda3/lib/python3.9/site-packages/pandas/
 <span class="nb">print</span><span class="p">()</span>
 
 <span class="c1">#try two columns and remove the index from print statement</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">[[</span><span class="s1">'Student ID'</span><span class="p">,</span><span class="s1">'GPA'</span><span class="p">]]</span><span class="o">.</span><span class="n">to_string</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">[[</span><span class="s1">'Student ID'</span><span class="p">,</span><span class="s1">'GPA'</span><span class="p">]]</span><span class="o">.</span><span class="n">to_string</span><span class="p">(</span><span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">))</span> <span class="c1">#to print more than one, you just put a comma btwn the two categories u want printed</span>
 </pre></div>
 
     </div>
@@ -419,6 +385,10 @@ Student ID  GPA
 <h2 id="DataFrame-Sort">
 <a class="anchor" href="#DataFrame-Sort" aria-hidden="true"><span class="octicon octicon-link"></span></a>DataFrame Sort<a class="anchor-link" href="#DataFrame-Sort"> </a>
 </h2>
+<blockquote>
+<p><code>print(df.sort_values(by=['GPA']))</code></p>
+</blockquote>
+
 </div>
 </div>
 </div>
@@ -433,7 +403,7 @@ Student ID  GPA
 
 <span class="nb">print</span><span class="p">()</span>
 
-<span class="c1">#sort the values in reverse order</span>
+<span class="c1">#sort the values in reverse order --&gt; add statement ascending=True</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="p">[</span><span class="s1">'GPA'</span><span class="p">],</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">))</span>
 </pre></div>
 
@@ -490,6 +460,10 @@ Student ID  GPA
 <h2 id="DataFrame-Selection-or-Filter">
 <a class="anchor" href="#DataFrame-Selection-or-Filter" aria-hidden="true"><span class="octicon octicon-link"></span></a>DataFrame Selection or Filter<a class="anchor-link" href="#DataFrame-Selection-or-Filter"> </a>
 </h2>
+<blockquote>
+<p>Use to print only the values that meet a certain criteria</p>
+</blockquote>
+
 </div>
 </div>
 </div>
@@ -538,6 +512,10 @@ Student ID  GPA
 <h2 id="DataFrame-Selection-Max-and-Min">
 <a class="anchor" href="#DataFrame-Selection-Max-and-Min" aria-hidden="true"><span class="octicon octicon-link"></span></a>DataFrame Selection Max and Min<a class="anchor-link" href="#DataFrame-Selection-Max-and-Min"> </a>
 </h2>
+<blockquote>
+<p>Only prints the highest and lowest values in the data set provided</p>
+</blockquote>
+
 </div>
 </div>
 </div>
@@ -595,6 +573,10 @@ Student ID  GPA
 <h2 id="Python-Dictionary-to-Pandas-DataFrame">
 <a class="anchor" href="#Python-Dictionary-to-Pandas-DataFrame" aria-hidden="true"><span class="octicon octicon-link"></span></a>Python Dictionary to Pandas DataFrame<a class="anchor-link" href="#Python-Dictionary-to-Pandas-DataFrame"> </a>
 </h2>
+<blockquote>
+<p>How to make a data frame using a dictionary</p>
+</blockquote>
+
 </div>
 </div>
 </div>
@@ -609,8 +591,8 @@ Student ID  GPA
 
 <span class="c1">#the data can be stored as a python dictionary</span>
 <span class="nb">dict</span> <span class="o">=</span> <span class="p">{</span>
-  <span class="s2">"calories"</span><span class="p">:</span> <span class="p">[</span><span class="mi">420</span><span class="p">,</span> <span class="mi">380</span><span class="p">,</span> <span class="mi">390</span><span class="p">],</span>
-  <span class="s2">"duration"</span><span class="p">:</span> <span class="p">[</span><span class="mi">50</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">45</span><span class="p">]</span>
+  <span class="s2">"calories"</span><span class="p">:</span> <span class="p">[</span><span class="mi">420</span><span class="p">,</span> <span class="mi">380</span><span class="p">,</span> <span class="mi">390</span><span class="p">,</span> <span class="mi">480</span><span class="p">,</span> <span class="mi">360</span><span class="p">,</span> <span class="mi">780</span><span class="p">],</span>
+  <span class="s2">"duration"</span><span class="p">:</span> <span class="p">[</span><span class="mi">50</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">45</span><span class="p">,</span> <span class="mi">60</span><span class="p">,</span> <span class="mi">65</span><span class="p">,</span> <span class="mi">25</span><span class="p">]</span>
 <span class="p">}</span>
 <span class="c1">#stores the data in a data frame</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">"-------------Dict_to_DF------------------"</span><span class="p">)</span>
@@ -620,7 +602,7 @@ Student ID  GPA
 <span class="nb">print</span><span class="p">(</span><span class="s2">"----------Dict_to_DF_labels--------------"</span><span class="p">)</span>
 
 <span class="c1">#or with the index argument, you can label rows.</span>
-<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="nb">dict</span><span class="p">,</span> <span class="n">index</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"day1"</span><span class="p">,</span> <span class="s2">"day2"</span><span class="p">,</span> <span class="s2">"day3"</span><span class="p">])</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="nb">dict</span><span class="p">,</span> <span class="n">index</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"day1"</span><span class="p">,</span> <span class="s2">"day2"</span><span class="p">,</span> <span class="s2">"day3"</span><span class="p">,</span> <span class="s2">"day4"</span><span class="p">,</span> <span class="s2">"day5"</span><span class="p">,</span> <span class="s2">"day6"</span><span class="p">])</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
 </pre></div>
 
@@ -639,11 +621,17 @@ Student ID  GPA
 0       420        50
 1       380        40
 2       390        45
+3       480        60
+4       360        65
+5       780        25
 ----------Dict_to_DF_labels--------------
       calories  duration
 day1       420        50
 day2       380        40
 day3       390        45
+day4       480        60
+day5       360        65
+day6       780        25
 </pre>
 </div>
 </div>
@@ -660,6 +648,10 @@ day3       390        45
 <h2 id="Examine-DataFrame-Rows">
 <a class="anchor" href="#Examine-DataFrame-Rows" aria-hidden="true"><span class="octicon octicon-link"></span></a>Examine DataFrame Rows<a class="anchor-link" href="#Examine-DataFrame-Rows"> </a>
 </h2>
+<blockquote>
+<p>How to print just some parts of the data frame</p>
+</blockquote>
+
 </div>
 </div>
 </div>
@@ -737,14 +729,14 @@ Name: day1, dtype: int64
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>&lt;class 'pandas.core.frame.DataFrame'&gt;
-Index: 3 entries, day1 to day3
+Index: 6 entries, day1 to day6
 Data columns (total 2 columns):
  #   Column    Non-Null Count  Dtype
 ---  ------    --------------  -----
- 0   calories  3 non-null      int64
- 1   duration  3 non-null      int64
+ 0   calories  6 non-null      int64
+ 1   duration  6 non-null      int64
 dtypes: int64(2)
-memory usage: 180.0+ bytes
+memory usage: 144.0+ bytes
 None
 </pre>
 </div>
@@ -777,7 +769,7 @@ None
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 
 <span class="c1">#read csv and sort 'Duration' largest to smallest</span>
-<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">'files/data.csv'</span><span class="p">)</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="p">[</span><span class="s1">'Duration'</span><span class="p">],</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">'files/data.csv'</span><span class="p">)</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="p">[</span><span class="s1">'Duration'</span><span class="p">],</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span> <span class="c1">#pulling the data in the file data.csv</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="s2">"--Duration Top 10---------"</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span>
@@ -837,7 +829,7 @@ None
 <a class="anchor" href="#APIs-are-a-Source-for-Writing-Programs-with-Data" aria-hidden="true"><span class="octicon octicon-link"></span></a>APIs are a Source for Writing Programs with Data<a class="anchor-link" href="#APIs-are-a-Source-for-Writing-Programs-with-Data"> </a>
 </h1>
 <blockquote>
-<p>3rd Party APIs are a great source for creating Pandas Data Frames.</p>
+<p>How to fetch APIs to create Pandas Data Frames.</p>
 <ul>
 <li>Data can be fetched and resulting json can be placed into a Data Frame</li>
 <li>Observe output, this looks very similar to a Database</li>
