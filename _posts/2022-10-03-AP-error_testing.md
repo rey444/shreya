@@ -2,7 +2,7 @@
 keywords: fastai
 description: Practice with identifying and correcting code blocks
 title: Big Idea 1 'Identifying and Correcting Errors'
-layout: default
+layout: base
 badges: false
 permalink: /collegeboard/error
 image: /images/apcsp.png
