@@ -10,17 +10,15 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="Data connections, trends, and correlation. Pandas is introduced as it could be valuable for PBL, data validation, as well as understanding College Board Topics." />
 <meta property="og:description" content="Data connections, trends, and correlation. Pandas is introduced as it could be valuable for PBL, data validation, as well as understanding College Board Topics." />
-<link rel="canonical" href="https://rey444.github.io/shreya/2023/03/09/AP-unit2-3.html" />
-<meta property="og:url" content="https://rey444.github.io/shreya/2023/03/09/AP-unit2-3.html" />
+<link rel="canonical" href="https://rey444.github.io/shreya/t3/2023/03/09/AP-unit2-3.html" />
+<meta property="og:url" content="https://rey444.github.io/shreya/t3/2023/03/09/AP-unit2-3.html" />
 <meta property="og:site_name" content="Shreya Sapkal’s Blog" />
-<meta property="og:image" content="https://rey444.github.io/shreya/images/python.png" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2023-03-09T00:00:00-06:00" />
-<meta name="twitter:card" content="summary_large_image" />
-<meta property="twitter:image" content="https://rey444.github.io/shreya/images/python.png" />
+<meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Unit 2.3 Extracting Information from Data, Pandas" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-03-09T00:00:00-06:00","datePublished":"2023-03-09T00:00:00-06:00","description":"Data connections, trends, and correlation. Pandas is introduced as it could be valuable for PBL, data validation, as well as understanding College Board Topics.","headline":"Unit 2.3 Extracting Information from Data, Pandas","image":"https://rey444.github.io/shreya/images/python.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://rey444.github.io/shreya/2023/03/09/AP-unit2-3.html"},"url":"https://rey444.github.io/shreya/2023/03/09/AP-unit2-3.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-03-09T00:00:00-06:00","datePublished":"2023-03-09T00:00:00-06:00","description":"Data connections, trends, and correlation. Pandas is introduced as it could be valuable for PBL, data validation, as well as understanding College Board Topics.","headline":"Unit 2.3 Extracting Information from Data, Pandas","mainEntityOfPage":{"@type":"WebPage","@id":"https://rey444.github.io/shreya/t3/2023/03/09/AP-unit2-3.html"},"url":"https://rey444.github.io/shreya/t3/2023/03/09/AP-unit2-3.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/shreya/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://rey444.github.io/shreya/feed.xml" title="Shreya Sapkal's Blog" /><link rel="shortcut icon" type="image/x-icon" href="/shreya/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -81,10 +79,17 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      16 min read
+      17 min read
     
 </span></p>
 
+    
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/shreya/categories/#t3">t3</a>
+        
+      
+      </p>
     
 
     
@@ -119,7 +124,6 @@ window.onload = wrap_img;
 
   <div class="post-content e-content" itemprop="articleBody">
     <ul id="toc" class="section-nav">
-<li class="toc-entry toc-h1"><a href="#Files-To-Get">Files To Get </a></li>
 <li class="toc-entry toc-h1"><a href="#Pandas-and-DataFrames">Pandas and DataFrames </a></li>
 <li class="toc-entry toc-h1"><a href="#Cleaning-Data">Cleaning Data </a></li>
 <li class="toc-entry toc-h1"><a href="#Extracting-Info">Extracting Info </a>
@@ -147,6 +151,7 @@ window.onload = wrap_img;
 </ul>
 </li>
 <li class="toc-entry toc-h2"><a href="#Machine-Learning-Visit-Tutorials-Point">Machine Learning Visit Tutorials Point </a></li>
+<li class="toc-entry toc-h2"><a href="#Hacks-Completed">Hacks Completed </a></li>
 </ul>
 </li>
 </ul><!--
@@ -158,23 +163,6 @@ window.onload = wrap_img;
 
 <div class="container" id="notebook-container">
         
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Files-To-Get">
-<a class="anchor" href="#Files-To-Get" aria-hidden="true"><span class="octicon octicon-link"></span></a>Files To Get<a class="anchor-link" href="#Files-To-Get"> </a>
-</h1>
-<p>Save this file to your <strong>_notebooks</strong> folder</p>
-<p>wget <a href="https://raw.githubusercontent.com/nighthawkcoders/APCSP/master/_notebooks/2023-03-09-AP-unit2-3.ipynb">https://raw.githubusercontent.com/nighthawkcoders/APCSP/master/_notebooks/2023-03-09-AP-unit2-3.ipynb</a></p>
-<p>Save these files into a subfolder named <strong>files</strong> in your <strong>_notebooks</strong> folder</p>
-<p>wget <a href="https://raw.githubusercontent.com/nighthawkcoders/APCSP/master/_notebooks/files/data.csv">https://raw.githubusercontent.com/nighthawkcoders/APCSP/master/_notebooks/files/data.csv</a></p>
-<p>wget <a href="https://raw.githubusercontent.com/nighthawkcoders/APCSP/master/_notebooks/files/grade.json">https://raw.githubusercontent.com/nighthawkcoders/APCSP/master/_notebooks/files/grade.json</a></p>
-<p>Save this image into a subfolder named <strong>images</strong> in your <strong>_notebooks</strong> folder</p>
-<p>wget <a href="https://raw.githubusercontent.com/nighthawkcoders/APCSP/master/_notebooks/images/table_dataframe.png">https://raw.githubusercontent.com/nighthawkcoders/APCSP/master/_notebooks/images/table_dataframe.png</a></p>
-
-</div>
-</div>
-</div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -1444,11 +1432,77 @@ Please also refer to the documentation for alternative solver options:
 </div>
     
 
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Hacks-Completed">
+<a class="anchor" href="#Hacks-Completed" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hacks Completed<a class="anchor-link" href="#Hacks-Completed"> </a>
+</h2>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">requests</span>
+
+<span class="k">def</span> <span class="nf">fetch</span><span class="p">():</span>
+    <span class="sd">'''Obtain data from an endpoint'''</span>
+    <span class="n">url</span> <span class="o">=</span> <span class="s2">"https://finalssvgcars.duckdns.org/api/carspecs/"</span>
+    <span class="n">fetch</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+    <span class="n">json</span> <span class="o">=</span> <span class="n">fetch</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+
+    <span class="c1"># filter data for requirement</span>
+    <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">json</span><span class="p">[</span><span class="s1">'carspecs'</span><span class="p">])</span>  <span class="c1"># filter endpoint for country stats</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">5</span><span class="p">,</span> <span class="s1">'name'</span><span class="p">:</span><span class="s1">'seating_capacity'</span><span class="p">])</span> <span class="c1"># show row 0 through 5 and columns country_name through deaths</span>
+    
+<span class="n">fetch</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">TypeError</span>                                 Traceback (most recent call last)
+<span class="ansi-green-intense-fg ansi-bold">/home/shreyasapkal/shreya-2/_notebooks/2023-03-09-AP-unit2-3.ipynb Cell 42</span> in <span class="ansi-cyan-fg">&lt;cell line: 14&gt;</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/shreyasapkal/shreya-2/_notebooks/2023-03-09-AP-unit2-3.ipynb#X66sdnNjb2RlLXJlbW90ZQ%3D%3D?line=10'&gt;11&lt;/a&gt;</span>     df = pd.DataFrame(json['carspecs'])  # filter endpoint for country stats
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/shreyasapkal/shreya-2/_notebooks/2023-03-09-AP-unit2-3.ipynb#X66sdnNjb2RlLXJlbW90ZQ%3D%3D?line=11'&gt;12&lt;/a&gt;</span>     print(df.loc[0:5, 'name':'seating_capacity']) # show row 0 through 5 and columns country_name through deaths
+<span class="ansi-green-fg">---&gt; &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/shreyasapkal/shreya-2/_notebooks/2023-03-09-AP-unit2-3.ipynb#X66sdnNjb2RlLXJlbW90ZQ%3D%3D?line=13'&gt;14&lt;/a&gt;</span> fetch()
+
+<span class="ansi-green-intense-fg ansi-bold">/home/shreyasapkal/shreya-2/_notebooks/2023-03-09-AP-unit2-3.ipynb Cell 42</span> in <span class="ansi-cyan-fg">fetch</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/shreyasapkal/shreya-2/_notebooks/2023-03-09-AP-unit2-3.ipynb#X66sdnNjb2RlLXJlbW90ZQ%3D%3D?line=7'&gt;8&lt;/a&gt;</span> json = fetch.json()
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/shreyasapkal/shreya-2/_notebooks/2023-03-09-AP-unit2-3.ipynb#X66sdnNjb2RlLXJlbW90ZQ%3D%3D?line=9'&gt;10&lt;/a&gt;</span> # filter data for requirement
+<span class="ansi-green-fg">---&gt; &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/shreyasapkal/shreya-2/_notebooks/2023-03-09-AP-unit2-3.ipynb#X66sdnNjb2RlLXJlbW90ZQ%3D%3D?line=10'&gt;11&lt;/a&gt;</span> df = pd.DataFrame(json['carspecs'])  # filter endpoint for country stats
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/shreyasapkal/shreya-2/_notebooks/2023-03-09-AP-unit2-3.ipynb#X66sdnNjb2RlLXJlbW90ZQ%3D%3D?line=11'&gt;12&lt;/a&gt;</span> print(df.loc[0:5, 'name':'seating_capacity'])
+
+<span class="ansi-red-fg">TypeError</span>: list indices must be integers or slices, not str</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
 </div>
 
 
 
-  </div><a class="u-url" href="/shreya/2023/03/09/AP-unit2-3.html" hidden></a>
+  </div><a class="u-url" href="/shreya/t3/2023/03/09/AP-unit2-3.html" hidden></a>
 </article>
 
       </div>
