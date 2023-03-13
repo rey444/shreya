@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      17 min read
+      18 min read
     
 </span></p>
 
@@ -1477,18 +1477,128 @@ Please also refer to the documentation for alternative solver options:
 <pre>
 <span class="ansi-red-fg">---------------------------------------------------------------------------</span>
 <span class="ansi-red-fg">TypeError</span>                                 Traceback (most recent call last)
-<span class="ansi-green-intense-fg ansi-bold">/home/shreyasapkal/shreya-2/_notebooks/2023-03-09-AP-unit2-3.ipynb Cell 42</span> in <span class="ansi-cyan-fg">&lt;cell line: 14&gt;</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/shreyasapkal/shreya-2/_notebooks/2023-03-09-AP-unit2-3.ipynb#X66sdnNjb2RlLXJlbW90ZQ%3D%3D?line=10'&gt;11&lt;/a&gt;</span>     df = pd.DataFrame(json['carspecs'])  # filter endpoint for country stats
-<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/shreyasapkal/shreya-2/_notebooks/2023-03-09-AP-unit2-3.ipynb#X66sdnNjb2RlLXJlbW90ZQ%3D%3D?line=11'&gt;12&lt;/a&gt;</span>     print(df.loc[0:5, 'name':'seating_capacity']) # show row 0 through 5 and columns country_name through deaths
-<span class="ansi-green-fg">---&gt; &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/shreyasapkal/shreya-2/_notebooks/2023-03-09-AP-unit2-3.ipynb#X66sdnNjb2RlLXJlbW90ZQ%3D%3D?line=13'&gt;14&lt;/a&gt;</span> fetch()
+<span class="ansi-green-intense-fg ansi-bold">/home/shreyasapkal/shreya-2/_notebooks/2023-03-09-AP-unit2-3.ipynb Cell 41</span> in <span class="ansi-cyan-fg">&lt;cell line: 14&gt;</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/shreyasapkal/shreya-2/_notebooks/2023-03-09-AP-unit2-3.ipynb#X55sdnNjb2RlLXJlbW90ZQ%3D%3D?line=10'&gt;11&lt;/a&gt;</span>     df = pd.DataFrame(json['carspecs'])  # filter endpoint for country stats
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/shreyasapkal/shreya-2/_notebooks/2023-03-09-AP-unit2-3.ipynb#X55sdnNjb2RlLXJlbW90ZQ%3D%3D?line=11'&gt;12&lt;/a&gt;</span>     print(df.loc[0:5, 'name':'seating_capacity']) # show row 0 through 5 and columns country_name through deaths
+<span class="ansi-green-fg">---&gt; &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/shreyasapkal/shreya-2/_notebooks/2023-03-09-AP-unit2-3.ipynb#X55sdnNjb2RlLXJlbW90ZQ%3D%3D?line=13'&gt;14&lt;/a&gt;</span> fetch()
 
-<span class="ansi-green-intense-fg ansi-bold">/home/shreyasapkal/shreya-2/_notebooks/2023-03-09-AP-unit2-3.ipynb Cell 42</span> in <span class="ansi-cyan-fg">fetch</span><span class="ansi-blue-fg">()</span>
-<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/shreyasapkal/shreya-2/_notebooks/2023-03-09-AP-unit2-3.ipynb#X66sdnNjb2RlLXJlbW90ZQ%3D%3D?line=7'&gt;8&lt;/a&gt;</span> json = fetch.json()
-<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/shreyasapkal/shreya-2/_notebooks/2023-03-09-AP-unit2-3.ipynb#X66sdnNjb2RlLXJlbW90ZQ%3D%3D?line=9'&gt;10&lt;/a&gt;</span> # filter data for requirement
-<span class="ansi-green-fg">---&gt; &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/shreyasapkal/shreya-2/_notebooks/2023-03-09-AP-unit2-3.ipynb#X66sdnNjb2RlLXJlbW90ZQ%3D%3D?line=10'&gt;11&lt;/a&gt;</span> df = pd.DataFrame(json['carspecs'])  # filter endpoint for country stats
-<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/shreyasapkal/shreya-2/_notebooks/2023-03-09-AP-unit2-3.ipynb#X66sdnNjb2RlLXJlbW90ZQ%3D%3D?line=11'&gt;12&lt;/a&gt;</span> print(df.loc[0:5, 'name':'seating_capacity'])
+<span class="ansi-green-intense-fg ansi-bold">/home/shreyasapkal/shreya-2/_notebooks/2023-03-09-AP-unit2-3.ipynb Cell 41</span> in <span class="ansi-cyan-fg">fetch</span><span class="ansi-blue-fg">()</span>
+<span class="ansi-green-intense-fg ansi-bold">      &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/shreyasapkal/shreya-2/_notebooks/2023-03-09-AP-unit2-3.ipynb#X55sdnNjb2RlLXJlbW90ZQ%3D%3D?line=7'&gt;8&lt;/a&gt;</span> json = fetch.json()
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/shreyasapkal/shreya-2/_notebooks/2023-03-09-AP-unit2-3.ipynb#X55sdnNjb2RlLXJlbW90ZQ%3D%3D?line=9'&gt;10&lt;/a&gt;</span> # filter data for requirement
+<span class="ansi-green-fg">---&gt; &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/shreyasapkal/shreya-2/_notebooks/2023-03-09-AP-unit2-3.ipynb#X55sdnNjb2RlLXJlbW90ZQ%3D%3D?line=10'&gt;11&lt;/a&gt;</span> df = pd.DataFrame(json['carspecs'])  # filter endpoint for country stats
+<span class="ansi-green-intense-fg ansi-bold">     &lt;a href='vscode-notebook-cell://wsl%2Bubuntu/home/shreyasapkal/shreya-2/_notebooks/2023-03-09-AP-unit2-3.ipynb#X55sdnNjb2RlLXJlbW90ZQ%3D%3D?line=11'&gt;12&lt;/a&gt;</span> print(df.loc[0:5, 'name':'seating_capacity'])
 
 <span class="ansi-red-fg">TypeError</span>: list indices must be integers or slices, not str</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="n">dfRandom</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_json</span><span class="p">(</span><span class="s1">'files/car-info.json'</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">dfInfo</span><span class="p">)</span>
+<span class="c1"># created my own .json file, because there is nothing that can be averaged/etc. on my project file.</span>
+<span class="c1"># print('------Min-----')</span>
+<span class="c1"># print(dfInfo[dfInfo.mileage == dfRandom.mileage.min()])</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>                                             Car Info
+0   {'name': 'Chevrolet Blazer', 'mileage': '25', ...
+1   {'name': 'Chevrolet Blazer EV', 'mileage': 'N/...
+2   {'name': 'Chevrolet Bolt EV', 'mileage': 'N/A'...
+3   {'name': 'Chevrolet Equinox', 'mileage': '28',...
+4   {'name': 'Chevrolet Equinox EV', 'mileage': 'N...
+5   {'name': 'Chevrolet Trailblazer', 'mileage': '...
+6   {'name': 'Chevrolet Traverse', 'mileage': '21'...
+7   {'name': 'Chevrolet Seeker', 'mileage': '36', ...
+8   {'name': 'Chevrolet Suburban', 'mileage': '17'...
+9   {'name': 'Chevrolet Tahoe', 'mileage': '17', '...
+10  {'name': 'Chevrolet Trailblazer', 'mileage': '...
+11  {'name': 'Chevrolet Colorado', 'mileage': '21'...
+12  {'name': 'Chevrolet Silverado', 'mileage': '15...
+13  {'name': 'Chevrolet Silverado EV', 'mileage': ...
+14  {'name': 'Chevrolet Camaro', 'mileage': '22', ...
+15  {'name': 'Chevrolet Corvette', 'mileage': '19'...
+16  {'name': 'Chevrolet Malibu', 'mileage': '30', ...
+17  {'name': 'Chevrolet Express', 'mileage': '14',...
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="n">dfInfo</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_json</span><span class="p">(</span><span class="s1">'files/cars.json'</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">dfInfo</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">'----------------Minimum Mileage-----------------------'</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">dfInfo</span><span class="p">[</span><span class="n">dfInfo</span><span class="o">.</span><span class="n">Mileage</span> <span class="o">==</span> <span class="n">dfInfo</span><span class="o">.</span><span class="n">Mileage</span><span class="o">.</span><span class="n">min</span><span class="p">()])</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'----------------Maximum Mileage-----------------------'</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">dfInfo</span><span class="p">[</span><span class="n">dfInfo</span><span class="o">.</span><span class="n">Mileage</span> <span class="o">==</span> <span class="n">dfInfo</span><span class="o">.</span><span class="n">Mileage</span><span class="o">.</span><span class="n">max</span><span class="p">()])</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>    Mileage Transmission                Name
+0        28    Automatic    Chevrolet Blazer
+1        17    Automatic       Toyota Sienna
+2        23    Automatic    Dodge Challenger
+3        15       Manual         Ford Escape
+4         8    Automatic  Nissan Skyline R35
+5        22    Automatic  Chevrolet Corvette
+6        27    Automatic         Honda Pilot
+7        29    Automatic         Honda Civic
+8        32    Automatic      Toyota Corolla
+9        33       Manual        Toyota Camry
+10       25       Manual        Ford Mustang
+11       27       Manual    Chevrolet Camaro
+----------------Minimum Mileage-----------------------
+   Mileage Transmission                Name
+4        8    Automatic  Nissan Skyline R35
+----------------Maximum Mileage-----------------------
+   Mileage Transmission          Name
+9       33       Manual  Toyota Camry
+</pre>
 </div>
 </div>
 
