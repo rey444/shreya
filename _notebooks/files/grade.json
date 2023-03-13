@@ -1,44 +1,44 @@
 {
-    "Student ID":{
-      "0":123,
-      "1":246,
-      "2":578,
-      "3":469,
-      "4":324,
-      "5":313,
-      "6":145,
-      "7":167,
-      "8":235,
-      "9":"nil",
-      "10":469,
-      "11":456
+    "Mileage":{
+      "0":28,
+      "1":17,
+      "2":23,
+      "3":15,
+      "4":8,
+      "5":22,
+      "6":27,
+      "7":29,
+      "8":32,
+      "9":33,
+      "10":25,
+      "11":27
     },
-    "Year in School":{
-      "0":12,
-      "1":10,
-      "2":12,
-      "3":11,
-      "4":"Junior",
-      "5":20,
-      "6":12,
-      "7":10,
-      "8":"9th Grade",
-      "9":9,
-      "10":11,
-      "11":10
+    "Transmission":{
+      "0":"Automatic",
+      "1":"Automatic",
+      "2":"Automatic",
+      "3":"Manual",
+      "4":"Automatic",
+      "5":"Automatic",
+      "6":"Automatic",
+      "7":"Automatic",
+      "8":"Automatic",
+      "9":"Manual",
+      "10":"Manual",
+      "11":"Manual"
     },
-    "GPA":{
-      "0":3.57,
-      "1":4,
-      "2":2.78,
-      "3":3.45,
-      "4":4.75,
-      "5":3.33,
-      "6":2.95,
-      "7":3.9,
-      "8":3.15,
-      "9":2.8,
-      "10":3.45,
-      "11":2.75
+    "Name":{
+      "0":"Chevrolet Blazer",
+      "1":"Toyota Sienna",
+      "2":"Dodge Challenger",
+      "3":"Ford Escape",
+      "4":"Nissan Skyline R35",
+      "5":"Chevrolet Corvette",
+      "6":"Honda Pilot",
+      "7":"Honda Civic",
+      "8":"Toyota Corolla",
+      "9":"Toyota Camry",
+      "10":"Ford Mustang",
+      "11":"Chevrolet Camaro"
     }
 }
