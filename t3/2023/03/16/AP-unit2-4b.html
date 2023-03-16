@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      5 min read
+      7 min read
     
 </span></p>
 
@@ -171,10 +171,35 @@ window.onload = wrap_img;
 <p>Uses PRAGMA statement to read schema.</p>
 </blockquote>
 <p>Describe Schema, here is resource <a href="https://www.sqlite.org/index.html">Resource</a>- What is a database schema?</p>
+
+<pre><code>- blueprint describing the organization of a databse
+- columns of a database
+</code></pre>
 <ul>
-<li>What is the purpose of identity Column in SQL database?</li>
-<li>What is the purpose of a primary key in SQL database?</li>
-<li>What are the Data Types in SQL table?</li>
+<li>What is the purpose of identity Column in SQL database?<ul>
+<li>to differentiate between columns</li>
+<li>helps you to get data from certain columns</li>
+<li>you should label columns with specific names</li>
+<li>easy to access</li>
+</ul>
+</li>
+<li>What is the purpose of a primary key in SQL database?<ul>
+<li>some specific value that's associated with each individual user</li>
+<li>ex. user ID</li>
+</ul>
+</li>
+<li>What are the Data Types in SQL table?<ul>
+<li>integer</li>
+<li>string</li>
+<li>text</li>
+<li>boolean</li>
+<li>images</li>
+<li>any data type</li>
+<li>list</li>
+<li>dictionary</li>
+<li>class</li>
+</ul>
+</li>
 </ul>
 
 </div>
@@ -216,9 +241,39 @@ window.onload = wrap_img;
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>(0, 'id', 'INTEGER', 1, None, 1)
+(1, '_name', 'VARCHAR(255)', 1, None, 0)
+(2, '_uid', 'VARCHAR(255)', 1, None, 0)
+(3, '_password', 'VARCHAR(255)', 1, None, 0)
+(4, '_dob', 'DATE', 0, None, 0)
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
     
 
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>^^ this code cell outputted the different variables (outputted the schema)</p>
+<ul>
+<li>shows data types contained in table, ex. integer, character, etc.</li>
+<li>VARCHAR(255) means that the data type is a string with a character limit of 255</li>
+</ul>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -258,7 +313,7 @@ window.onload = wrap_img;
     <span class="n">results</span> <span class="o">=</span> <span class="n">cursor</span><span class="o">.</span><span class="n">execute</span><span class="p">(</span><span class="s1">'SELECT * FROM users'</span><span class="p">)</span><span class="o">.</span><span class="n">fetchall</span><span class="p">()</span>
 
     <span class="c1"># Print the results</span>
-    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">results</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">results</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span> <span class="c1"># results has data in it, so it could be an object; results has attributes</span>
         <span class="nb">print</span><span class="p">(</span><span class="s2">"Table is empty"</span><span class="p">)</span>
     <span class="k">else</span><span class="p">:</span>
         <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">results</span><span class="p">:</span>
@@ -272,6 +327,25 @@ window.onload = wrap_img;
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>(1, 'Thomas Edison', 'toby', 'sha256$zfnsqIPEAKoeZMf2$890504297f31e7a002c6d63fb520e6bf8b9ff5e53ead6fa095520d0da223fa2a', '1847-02-11')
+(2, 'Nikola Tesla', 'niko', 'sha256$DhTSX1uSdNW12e66$5c56bd8cfac971f6208f4169fafc794b59eafa28eed29e858d2280bf67f4fb36', '2023-03-15')
+(3, 'Alexander Graham Bell', 'lex', 'sha256$WYXdAAUsb9SqyRlQ$4968219d252cc37477dd467038cce4a1a26c22aad9d9d7374f75557b23e83495', '2023-03-15')
+(4, 'Eli Whitney', 'whit', 'sha256$Hn4HMsO2553pYQLp$6085a296175563b2363eb4293a208698ca31e760a5e8a74394a35510817c15a0', '2023-03-15')
+(5, 'Indiana Jones', 'indi', 'sha256$hU2hgumB7IAvIajn$7504fb225c6c87f6cb376f16b8389e4bc732a7422d50399be8d38ff164feb088', '1920-10-21')
+(6, 'Marion Ravenwood', 'raven', 'sha256$3PtcQmsM9uih20Xg$a9111d8240ae3e1e7dc904f153b364cf7e294060425a6b279bddfd6c440c41f2', '1921-10-21')
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -332,16 +406,47 @@ window.onload = wrap_img;
     <span class="n">cursor</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
     <span class="n">conn</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
     
-<span class="c1">#create()</span>
+<span class="n">create</span><span class="p">()</span>
 </pre></div>
 
     </div>
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>A new user record rey444 has been created
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
     
 
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Why is this create function better than the one from the lesson yesterday?</p>
+<ol>
+<li>It reads nicely; you can understand what the functionality of each line is </li>
+<li>Moves almost chronologically in order of what you need it to do, compared to yesterday's, which seems to jump around</li>
+<li>Fewer try-excepts</li>
+<li>Working directly through sqlite3</li>
+<li>Shorter (procedural abstraction)</li>
+<li>Less complicated (procedural abstraction)</li>
+<li>Using objects --&gt; makes it easier to understand</li>
+</ol>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -498,21 +603,21 @@ window.onload = wrap_img;
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">menu</span><span class="p">():</span>
     <span class="n">operation</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">"Enter: (C)reate (R)ead (U)pdate or (D)elete or (S)chema"</span><span class="p">)</span>
-    <span class="k">if</span> <span class="n">operation</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s1">'c'</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">operation</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s1">'c'</span><span class="p">:</span> <span class="c1"># checks if input is C</span>
         <span class="n">create</span><span class="p">()</span>
-    <span class="k">elif</span> <span class="n">operation</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s1">'r'</span><span class="p">:</span>
+    <span class="k">elif</span> <span class="n">operation</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s1">'r'</span><span class="p">:</span> <span class="c1"># checks if input is R</span>
         <span class="n">read</span><span class="p">()</span>
-    <span class="k">elif</span> <span class="n">operation</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s1">'u'</span><span class="p">:</span>
+    <span class="k">elif</span> <span class="n">operation</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s1">'u'</span><span class="p">:</span> <span class="c1"># checks if input is U</span>
         <span class="n">update</span><span class="p">()</span>
-    <span class="k">elif</span> <span class="n">operation</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s1">'d'</span><span class="p">:</span>
+    <span class="k">elif</span> <span class="n">operation</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s1">'d'</span><span class="p">:</span> <span class="c1"># checks if input is D</span>
         <span class="n">delete</span><span class="p">()</span>
-    <span class="k">elif</span> <span class="n">operation</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s1">'s'</span><span class="p">:</span>
+    <span class="k">elif</span> <span class="n">operation</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s1">'s'</span><span class="p">:</span> <span class="c1"># checks if input is S</span>
         <span class="n">schema</span><span class="p">()</span>
-    <span class="k">elif</span> <span class="nb">len</span><span class="p">(</span><span class="n">operation</span><span class="p">)</span><span class="o">==</span><span class="mi">0</span><span class="p">:</span> <span class="c1"># Escape Key</span>
-        <span class="k">return</span>
+    <span class="k">elif</span> <span class="nb">len</span><span class="p">(</span><span class="n">operation</span><span class="p">)</span><span class="o">==</span><span class="mi">0</span><span class="p">:</span> <span class="c1"># Escape Key # checks if input is the escape key</span>
+        <span class="k">return</span> <span class="c1"># if the input is escape key, then stop the function</span>
     <span class="k">else</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">"Please enter c, r, u, or d"</span><span class="p">)</span> 
-    <span class="n">menu</span><span class="p">()</span> <span class="c1"># recursion, repeat menu</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">"Please enter c, r, u, or d"</span><span class="p">)</span> <span class="c1"># if the input is not the escape key, show this message and restart the function</span>
+    <span class="n">menu</span><span class="p">()</span> <span class="c1"># recursion, repeat menu; the function is calling itself</span>
         
 <span class="k">try</span><span class="p">:</span>
     <span class="n">menu</span><span class="p">()</span> <span class="c1"># start menu</span>
@@ -524,9 +629,45 @@ window.onload = wrap_img;
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>(1, 'Thomas Edison', 'toby', 'sha256$zfnsqIPEAKoeZMf2$890504297f31e7a002c6d63fb520e6bf8b9ff5e53ead6fa095520d0da223fa2a', '1847-02-11')
+(2, 'Nikola Tesla', 'niko', 'sha256$DhTSX1uSdNW12e66$5c56bd8cfac971f6208f4169fafc794b59eafa28eed29e858d2280bf67f4fb36', '2023-03-15')
+(3, 'Alexander Graham Bell', 'lex', 'sha256$WYXdAAUsb9SqyRlQ$4968219d252cc37477dd467038cce4a1a26c22aad9d9d7374f75557b23e83495', '2023-03-15')
+(4, 'Eli Whitney', 'whit', 'sha256$Hn4HMsO2553pYQLp$6085a296175563b2363eb4293a208698ca31e760a5e8a74394a35510817c15a0', '2023-03-15')
+(5, 'Indiana Jones', 'indi', 'sha256$hU2hgumB7IAvIajn$7504fb225c6c87f6cb376f16b8389e4bc732a7422d50399be8d38ff164feb088', '1920-10-21')
+(6, 'Marion Ravenwood', 'raven', 'sha256$3PtcQmsM9uih20Xg$a9111d8240ae3e1e7dc904f153b364cf7e294060425a6b279bddfd6c440c41f2', '1921-10-21')
+(7, 'Shreya Sapkal', 'rey444', 'password', '2004-12-21')
+(1, 'Thomas Edison', 'toby', 'sha256$zfnsqIPEAKoeZMf2$890504297f31e7a002c6d63fb520e6bf8b9ff5e53ead6fa095520d0da223fa2a', '1847-02-11')
+(2, 'Nikola Tesla', 'niko', 'sha256$DhTSX1uSdNW12e66$5c56bd8cfac971f6208f4169fafc794b59eafa28eed29e858d2280bf67f4fb36', '2023-03-15')
+(3, 'Alexander Graham Bell', 'lex', 'sha256$WYXdAAUsb9SqyRlQ$4968219d252cc37477dd467038cce4a1a26c22aad9d9d7374f75557b23e83495', '2023-03-15')
+(4, 'Eli Whitney', 'whit', 'sha256$Hn4HMsO2553pYQLp$6085a296175563b2363eb4293a208698ca31e760a5e8a74394a35510817c15a0', '2023-03-15')
+(5, 'Indiana Jones', 'indi', 'sha256$hU2hgumB7IAvIajn$7504fb225c6c87f6cb376f16b8389e4bc732a7422d50399be8d38ff164feb088', '1920-10-21')
+(6, 'Marion Ravenwood', 'raven', 'sha256$3PtcQmsM9uih20Xg$a9111d8240ae3e1e7dc904f153b364cf7e294060425a6b279bddfd6c440c41f2', '1921-10-21')
+(7, 'Shreya Sapkal', 'rey444', 'password', '2004-12-21')
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
     
 
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><code>elif len(operation)==0: # Escape Key</code>
+This says that keep prompting to type in C, R, U, or D until the escape key is pressed</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
