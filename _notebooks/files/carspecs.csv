@@ -1,0 +1,6 @@
+modelName, carType, powerSource, mileage, seatingCapacity
+Chevrolet Blazer, SUV, gasoline, 25, 5
+Ford Escape, SUV, gasoline, 22, 5
+Chrysler Pacifica, Minivan, gasoline & electric, 40, 7
+Ford F-150, Pickup Truck, gasoline, 17, 5
+Tesla Model S, Sedan, electric, 235, 5
