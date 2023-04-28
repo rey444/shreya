@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      5 min read
+      7 min read
     
 </span></p>
 
@@ -131,12 +131,14 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h1"><a href="#Mini-hack">Mini-hack </a></li>
 <li class="toc-entry toc-h1"><a href="#Extend/Inheritance">Extend/Inheritance </a></li>
 <li class="toc-entry toc-h1"><a href="#Mixin">Mixin </a></li>
-<li class="toc-entry toc-h1"><a href="#Mini-hack">Mini-hack </a></li>
+<li class="toc-entry toc-h1"><a href="#Mini-Hack">Mini-Hack </a></li>
 <li class="toc-entry toc-h1"><a href="#Function">Function </a></li>
 <li class="toc-entry toc-h1"><a href="#Import">Import </a></li>
 <li class="toc-entry toc-h1"><a href="#SASS-Hacks">SASS Hacks </a>
 <ul>
 <li class="toc-entry toc-h2"><a href="#Multiple-Choice-Quiz-Questions">Multiple Choice Quiz Questions </a></li>
+<li class="toc-entry toc-h2"><a href="#Use-SASS-to-create-something-that-uses-either-extend-or-mixin">Use SASS to create something that uses either extend or mixin </a></li>
+<li class="toc-entry toc-h2"><a href="#Research-of-Additional-SASS-Features">Research of Additional SASS Features </a></li>
 </ul>
 </li>
 </ul><!--
@@ -302,18 +304,18 @@ window.onload = wrap_img;
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>%buttonLayout {</p>
 
-<pre><code>width: 15em;
+<pre><code>%buttonLayout {
 
-height: 15em;
+    width: 15em;
 
-color: #ffffff;
+    height: 15em;
 
-margin-right: 10%;
+    color: #ffffff;
 
-</code></pre>
-<p>}</p>
+    margin-right: 10%;
+
+}</code></pre>
 
 </div>
 </div>
@@ -333,12 +335,12 @@ margin-right: 10%;
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>.gettingStartedButton, .nestingButton, .extendButton {</p>
 
-<pre><code>@extend %buttonLayout;
+<pre><code>.gettingStartedButton, .nestingButton, .extendButton {
 
-</code></pre>
-<p>}</p>
+    @extend %buttonLayout;
+
+}</code></pre>
 
 </div>
 </div>
@@ -357,24 +359,24 @@ margin-right: 10%;
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>.gettingStartedButton {</p>
 
-<pre><code>background: radial-gradient( #1539db, #8a8ce6);
+<pre><code>.gettingStartedButton {
 
-</code></pre>
-<p>}</p>
-<p>.nestingButton {</p>
+    background: radial-gradient( #1539db, #8a8ce6);
 
-<pre><code>background: radial-gradient( #3a9fa7, #8ae0e6);
+}
 
-</code></pre>
-<p>}</p>
-<p>.extendButton {</p>
+.nestingButton {
 
-<pre><code>background: radial-gradient( #643aa7, #d78ae6);
+    background: radial-gradient( #3a9fa7, #8ae0e6);
 
-</code></pre>
-<p>}</p>
+}
+
+.extendButton {
+
+    background: radial-gradient( #643aa7, #d78ae6);
+
+}</code></pre>
 
 </div>
 </div>
@@ -399,12 +401,12 @@ margin-right: 10%;
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>@mixin buttonLayout($innerColor, $outerColor) {</p>
 
-<pre><code>background: radial-gradient($innerColor, $outerColor);
+<pre><code>@mixin buttonLayout($innerColor, $outerColor) {
 
-</code></pre>
-<p>}</p>
+    background: radial-gradient($innerColor, $outerColor);
+
+}</code></pre>
 
 </div>
 </div>
@@ -425,12 +427,12 @@ margin-right: 10%;
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>.gettingStartedButton {</p>
 
-<pre><code>@include buttonLayout(#1539db, #8a8ce6);
+<pre><code>.gettingStartedButton {
 
-</code></pre>
-<p>}</p>
+    @include buttonLayout(#1539db, #8a8ce6);
+
+}</code></pre>
 
 </div>
 </div>
@@ -449,22 +451,22 @@ margin-right: 10%;
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>@mixin buttonLayout($innerColor, $outerColor) {</p>
 
-<pre><code>background: radial-gradient($innerColor, $outerColor);
+<pre><code>@mixin buttonLayout($innerColor, $outerColor) {
 
-width: 15em;
+    background: radial-gradient($innerColor, $outerColor);
 
-height: 15em;
+    width: 15em;
 
-color: #ffffff;
+    height: 15em;
 
-margin-right: 10%;
+    color: #ffffff;
 
-border-radius: 2em;
+    margin-right: 10%;
 
-</code></pre>
-<p>}</p>
+    border-radius: 2em;
+
+}</code></pre>
 
 </div>
 </div>
@@ -472,8 +474,8 @@ border-radius: 2em;
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Mini-hack">
-<a class="anchor" href="#Mini-hack" aria-hidden="true"><span class="octicon octicon-link"></span></a>Mini-hack<a class="anchor-link" href="#Mini-hack"> </a>
+<h1 id="Mini-Hack">
+<a class="anchor" href="#Mini-Hack" aria-hidden="true"><span class="octicon octicon-link"></span></a>Mini-Hack<a class="anchor-link" href="#Mini-Hack"> </a>
 </h1>
 <p>Write out a mixin in SASS that takes in a color and a font size as the parameter. Within the mixin, set the background color and font color to the color parameter, and set the font size to the font size parameter. Then create a selector that calls the mixin, and pass in a color and font size of your choice as the arguments.</p>
 
@@ -649,6 +651,70 @@ border-radius: 2em;
 <ul>
 <li>b. Directive</li>
 </ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Use-SASS-to-create-something-that-uses-either-extend-or-mixin">
+<a class="anchor" href="#Use-SASS-to-create-something-that-uses-either-extend-or-mixin" aria-hidden="true"><span class="octicon octicon-link"></span></a>Use SASS to create something that uses either extend or mixin<a class="anchor-link" href="#Use-SASS-to-create-something-that-uses-either-extend-or-mixin"> </a>
+</h2>
+<pre><code>.button {
+  padding: 10px;
+  border: 1px solid #000000;
+}
+
+.submit-button {
+  @extend .button;
+  background-color: #007bff;
+  color: #fff;
+}</code></pre>
+<p>Here, I am creating a basic button selector, <code>.button</code>, which can be extended to different kinds of buttons. For the <code>.submit-button</code> selector, I inherit the styles from the <code>.button</code> selector to include it in the submit button, in addition to the new styles I want to use/have defined for the <code>submit-button</code>.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Research-of-Additional-SASS-Features">
+<a class="anchor" href="#Research-of-Additional-SASS-Features" aria-hidden="true"><span class="octicon octicon-link"></span></a>Research of Additional SASS Features<a class="anchor-link" href="#Research-of-Additional-SASS-Features"> </a>
+</h2>
+<ul>
+<li>There are many SASS directives, which can be called using <code>@</code>
+</li>
+<li>
+<code>@import</code>: used to import one SASS file into another.</li>
+<li>
+<code>@extend</code>: used to inherit styles from one selector to another.</li>
+<li>
+<code>@mixin</code>: used to define a reusable set of styles.</li>
+<li>
+<code>@include</code>: used to include a mixin in a selector.</li>
+<li>
+<code>@if</code>: used to control the flow of code based on conditions.</li>
+<li>
+<code>@else</code>: used to define an alternate code path for an <code>@if</code> statement.</li>
+<li>
+<code>@for</code>: used to create a loop that iterates a specific number of times.</li>
+<li>
+<code>@while</code>: used to create a loop that continues as long as a condition is true.</li>
+<li>
+<code>@each</code>: used to iterate over a list or map.</li>
+<li>
+<code>@function</code>: used to define a reusable block of code that returns a value.</li>
+<li>
+<code>@return</code>: used to return a value from a function.</li>
+<li>
+<code>@debug</code>: used to print a debug message to the console during compilation.</li>
+<li>
+<code>@warn</code>: used to print a warning message to the console during compilation.</li>
+<li>
+<code>@error</code>: used to throw an error during compilation.</li>
+</ul>
+<p>SASS is cool because unlike CSS which mostly just allows you to do styling, you can also use SASS to create programs like other programming languages such as JavaScript and Python, using the directives <code>@if</code>, <code>@else</code>, <code>@for</code>, <code>@while</code>, <code>@each</code>, <code>@function</code>, and <code>@return</code>. You can even go as far as to debug your SASS code, print warning messages, and warn for errors.</p>
 
 </div>
 </div>
