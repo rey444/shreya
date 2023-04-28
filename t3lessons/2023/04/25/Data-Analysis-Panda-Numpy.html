@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      18 min read
+      20 min read
     
 </span></p>
 
@@ -153,7 +153,14 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h1"><a href="#CSV-FILES!">CSV FILES! </a></li>
 <li class="toc-entry toc-h1"><a href="#Our-Frontend-Data-Analysis-Project">Our Frontend Data Analysis Project </a></li>
 <li class="toc-entry toc-h1"><a href="#Popcorn-Hacks">Popcorn Hacks </a></li>
-<li class="toc-entry toc-h1"><a href="#Main-Hack">Main Hack </a></li>
+<li class="toc-entry toc-h1"><a href="#Main-Hack">Main Hack </a>
+<ul>
+<li class="toc-entry toc-h2"><a href="#Make-a-Data-File">Make a Data File </a></li>
+<li class="toc-entry toc-h2"><a href="#Find-Max-&-Min-Values">Find Max &amp; Min Values </a></li>
+<li class="toc-entry toc-h2"><a href="#Sort-in-Order">Sort in Order </a></li>
+<li class="toc-entry toc-h2"><a href="#Create-Small-Data-Frame-&-Merge">Create Small Data Frame &amp; Merge </a></li>
+</ul>
+</li>
 <li class="toc-entry toc-h1"><a href="#Grading">Grading </a></li>
 </ul><!--
 #################################################
@@ -1500,6 +1507,201 @@ total_rooms
 </li>
 </ul>
 
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Make-a-Data-File">
+<a class="anchor" href="#Make-a-Data-File" aria-hidden="true"><span class="octicon octicon-link"></span></a>Make a Data File<a class="anchor-link" href="#Make-a-Data-File"> </a>
+</h2>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+
+<span class="c1"># Read CSV file into a pandas dataframe</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">'./files/carspecs.csv'</span><span class="p">)</span>
+
+<span class="c1"># Print the dataframe</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>                modelName        carType  mileage  seatingCapacity
+0        Chevrolet Blazer            SUV       25                5
+1             Ford Escape            SUV       22                5
+2       Chrysler Pacifica        Minivan       40                7
+3              Ford F-150   Pickup Truck       17                5
+4           Toyota Sienna        Minivan       36                8
+5        Dodge Challenger     Muscle Car       13                2
+6      Nissan Skyline R35     Sports Car       18                4
+7   Chevrolet Corvette C8     Sports Car       19                2
+8             Honda Pilot            SUV       22                8
+9             Honda Civic          Sedan       35                5
+10         Toyota Corolla          Sedan       33                5
+11           Toyota Camry          Sedan       32                5
+12           Ford Mustang     Sports Car       24                4
+13       Chevrolet Camaro     Sports Car       24                4
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Find-Max-&amp;-Min-Values">
+<a class="anchor" href="#Find-Max-&amp;-Min-Values" aria-hidden="true"><span class="octicon octicon-link"></span></a>Find Max &amp; Min Values<a class="anchor-link" href="#Find-Max-&amp;-Min-Values"> </a>
+</h2>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+
+<span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">'files/carspecs.csv'</span><span class="p">)</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="p">[</span><span class="s1">'mileage'</span><span class="p">],</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">columns</span> <span class="o">=</span> <span class="n">data</span><span class="p">[[</span><span class="s1">'modelName'</span><span class="p">,</span><span class="s1">'carType'</span><span class="p">,</span><span class="s1">'mileage'</span><span class="p">,</span> <span class="s1">'seatingCapacity'</span><span class="p">]]</span>
+
+<span class="n">max_mileage</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">'mileage'</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"The maximum mileage of the cars in the list is: </span><span class="si">{</span><span class="n">max_mileage</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Here are the details of the car with the most mileage:"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">columns</span><span class="p">[</span><span class="n">columns</span><span class="o">.</span><span class="n">mileage</span> <span class="o">==</span> <span class="n">columns</span><span class="o">.</span><span class="n">mileage</span><span class="o">.</span><span class="n">max</span><span class="p">()])</span>
+<span class="nb">print</span><span class="p">()</span>
+
+<span class="n">min_mileage</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">'mileage'</span><span class="p">]</span><span class="o">.</span><span class="n">min</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">"The minimum mileage of the cars in the list is: </span><span class="si">{</span><span class="n">min_mileage</span><span class="si">}</span><span class="s2">"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Here are the details of the car with the least mileage:"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">columns</span><span class="p">[</span><span class="n">columns</span><span class="o">.</span><span class="n">mileage</span> <span class="o">==</span> <span class="n">columns</span><span class="o">.</span><span class="n">mileage</span><span class="o">.</span><span class="n">min</span><span class="p">()])</span>
+<span class="nb">print</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>The maximum mileage of the cars in the list is: 40
+Here are the details of the car with the most mileage:
+           modelName   carType  mileage  seatingCapacity
+2  Chrysler Pacifica   Minivan       40                7
+
+The minimum mileage of the cars in the list is: 13
+Here are the details of the car with the least mileage:
+          modelName      carType  mileage  seatingCapacity
+5  Dodge Challenger   Muscle Car       13                2
+
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Sort-in-Order">
+<a class="anchor" href="#Sort-in-Order" aria-hidden="true"><span class="octicon octicon-link"></span></a>Sort in Order<a class="anchor-link" href="#Sort-in-Order"> </a>
+</h2>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+
+<span class="c1">#read csv and sort 'Duration' largest to smallest</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">'files/carspecs.csv'</span><span class="p">)</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="p">[</span><span class="s1">'mileage'</span><span class="p">],</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"--Top 5 Mileage---------"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">))</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">"--Bottom 5 Mileage------"</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">tail</span><span class="p">(</span><span class="mi">5</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>--Top 5 Mileage---------
+            modelName   carType  mileage  seatingCapacity
+2   Chrysler Pacifica   Minivan       40                7
+4       Toyota Sienna   Minivan       36                8
+9         Honda Civic     Sedan       35                5
+10     Toyota Corolla     Sedan       33                5
+11       Toyota Camry     Sedan       32                5
+--Bottom 5 Mileage------
+               modelName        carType  mileage  seatingCapacity
+8            Honda Pilot            SUV       22                8
+7  Chevrolet Corvette C8     Sports Car       19                2
+6     Nissan Skyline R35     Sports Car       18                4
+3             Ford F-150   Pickup Truck       17                5
+5       Dodge Challenger     Muscle Car       13                2
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Create-Small-Data-Frame-&amp;-Merge">
+<a class="anchor" href="#Create-Small-Data-Frame-&amp;-Merge" aria-hidden="true"><span class="octicon octicon-link"></span></a>Create Small Data Frame &amp; Merge<a class="anchor-link" href="#Create-Small-Data-Frame-&amp;-Merge"> </a>
+</h2>
 </div>
 </div>
 </div>
