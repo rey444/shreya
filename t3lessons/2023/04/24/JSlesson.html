@@ -995,18 +995,16 @@ false
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">time</span> 
-<span class="k">if</span> <span class="p">(</span><span class="mi">0</span> <span class="o">&lt;</span> <span class="n">time</span> <span class="o">&lt;</span> <span class="mi">12</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">greeting</span> <span class="o">=</span> <span class="s2">"Good morning"</span><span class="p">;</span>
-<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">time</span> <span class="o">=</span> <span class="mi">12</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">greeting</span> <span class="o">=</span> <span class="s2">"Good afternoon"</span><span class="p">;</span>
-<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="mi">13</span> <span class="o">&lt;</span> <span class="n">time</span> <span class="o">&lt;</span> <span class="mi">17</span><span class="p">){</span>
-    <span class="n">greeting</span> <span class="o">=</span> <span class="s2">"Good afternoon"</span><span class="p">;</span>
-<span class="p">}</span> <span class="k">else</span> <span class="p">(</span><span class="mi">17</span> <span class="o">&lt;</span> <span class="n">time</span> <span class="o">&lt;</span> <span class="mi">23</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">greeting</span> <span class="o">=</span> <span class="s2">"Good evening"</span><span class="p">;</span>
-<span class="p">}</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">let</span> <span class="n">today</span> <span class="o">=</span> <span class="n">new</span> <span class="n">Date</span><span class="p">();</span>
+<span class="n">let</span> <span class="n">currentHour</span> <span class="o">=</span> <span class="n">today</span><span class="o">.</span><span class="n">getHours</span><span class="p">();</span>
 
-<span class="n">greeting</span>
+<span class="k">if</span> <span class="p">(</span><span class="n">currentHour</span> <span class="o">&lt;</span> <span class="mi">12</span><span class="p">)</span> <span class="p">{</span>
+  <span class="n">console</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="s2">"Good morning!"</span><span class="p">);</span>
+<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">currentHour</span> <span class="o">&lt;</span> <span class="mi">18</span><span class="p">)</span> <span class="p">{</span>
+  <span class="n">console</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="s2">"Good afternoon!"</span><span class="p">);</span>
+<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+  <span class="n">console</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="s2">"Good evening!"</span><span class="p">);</span>
+<span class="p">}</span>
 </pre></div>
 
     </div>
