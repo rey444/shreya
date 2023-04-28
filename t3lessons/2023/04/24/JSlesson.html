@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      4 min read
+      6 min read
     
 </span></p>
 
@@ -205,9 +205,15 @@ window.onload = wrap_img;
 <a class="anchor" href="#Data-types--there-are-8-JS-data-types." aria-hidden="true"><span class="octicon octicon-link"></span></a>Data types- there are 8 JS data types.<a class="anchor-link" href="#Data-types--there-are-8-JS-data-types."> </a>
 </h3>
 <ul>
-<li>List a few data types that you already know
-&gt;
-&gt;<blockquote>
+<li>List a few data types that you already know<blockquote>
+<p>string
+number
+bigint
+boolean
+undefined
+null
+symbol
+object</p>
 </blockquote>
 </li>
 </ul>
@@ -562,6 +568,60 @@ false
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-intense-fg ansi-bold">Failed to start the Kernel. 
+</span>
+<span class="ansi-red-intense-fg ansi-bold">/home/shreyasapkal/anaconda3/lib/node_modules/ijavascript/node_modules/node-gyp-build/node-gyp-build.js:60
+</span>
+<span class="ansi-red-intense-fg ansi-bold">  throw new Error('No native build was found for ' + target + '\n    loaded from: ' + dir + '\n')
+</span>
+<span class="ansi-red-intense-fg ansi-bold">  ^
+</span>
+<span class="ansi-red-intense-fg ansi-bold">
+</span>
+<span class="ansi-red-intense-fg ansi-bold">Error: No native build was found for platform=linux arch=x64 runtime=electron abi=108 uv=1 libc=glibc node=18.15.0
+</span>
+<span class="ansi-red-intense-fg ansi-bold">    loaded from: /home/shreyasapkal/anaconda3/lib/node_modules/ijavascript/node_modules/zeromq
+</span>
+<span class="ansi-red-intense-fg ansi-bold">
+</span>
+<span class="ansi-red-intense-fg ansi-bold">    at load.resolve.load.path (/home/shreyasapkal/anaconda3/lib/node_modules/ijavascript/node_modules/node-gyp-build/node-gyp-build.js:60:9)
+</span>
+<span class="ansi-red-intense-fg ansi-bold">    at load (/home/shreyasapkal/anaconda3/lib/node_modules/ijavascript/node_modules/node-gyp-build/node-gyp-build.js:22:30)
+</span>
+<span class="ansi-red-intense-fg ansi-bold">    at Object.&lt;anonymous&gt; (/home/shreyasapkal/anaconda3/lib/node_modules/ijavascript/node_modules/zeromq/binding.js:1:43)
+</span>
+<span class="ansi-red-intense-fg ansi-bold">    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+</span>
+<span class="ansi-red-intense-fg ansi-bold">    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+</span>
+<span class="ansi-red-intense-fg ansi-bold">    at Module.load (node:internal/modules/cjs/loader:1117:32)
+</span>
+<span class="ansi-red-intense-fg ansi-bold">    at Module._load (node:internal/modules/cjs/loader:958:12)
+</span>
+<span class="ansi-red-intense-fg ansi-bold">    at Module.require (node:internal/modules/cjs/loader:1141:19)
+</span>
+<span class="ansi-red-intense-fg ansi-bold">    at require (node:internal/modules/cjs/helpers:110:18)
+</span>
+<span class="ansi-red-intense-fg ansi-bold">    at Object.&lt;anonymous&gt; (/home/shreyasapkal/anaconda3/lib/node_modules/ijavascript/node_modules/zeromq/lib/index.js:6:11)
+</span>
+<span class="ansi-red-intense-fg ansi-bold">
+</span>
+<span class="ansi-red-intense-fg ansi-bold">Node.js v18.15.0. 
+</span>
+<span class="ansi-red-intense-fg ansi-bold">View Jupyter &lt;a href='command:jupyter.viewOutput'&gt;log&lt;/a&gt; for further details.</span></pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
     
 
@@ -572,11 +632,12 @@ false
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">const</span> <span class="n">myObject</span> <span class="o">=</span> <span class="p">{</span>
-    <span class="p">[</span><span class="n">mySymbol</span><span class="p">]:</span> <span class="s1">'Hello World'</span>
-  <span class="p">};</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">const</span> <span class="n">mySymbol</span> <span class="o">=</span> <span class="n">Symbol</span><span class="p">();</span>
+<span class="n">const</span> <span class="n">myObject</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="p">[</span><span class="n">mySymbol</span><span class="p">]:</span> <span class="s1">'Hello World'</span>
+<span class="p">};</span>
   
-  <span class="n">console</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">myObject</span><span class="p">);</span>
+<span class="n">console</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">myObject</span><span class="p">[</span><span class="n">mySymbol</span><span class="p">]);</span>
 </pre></div>
 
     </div>
@@ -588,9 +649,49 @@ false
 
 <div class="output_area">
 
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>{ [Symbol()]: 'Hello World' }
-</pre>
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-intense-fg ansi-bold">Failed to start the Kernel. 
+</span>
+<span class="ansi-red-intense-fg ansi-bold">/home/shreyasapkal/anaconda3/lib/node_modules/ijavascript/node_modules/node-gyp-build/node-gyp-build.js:60
+</span>
+<span class="ansi-red-intense-fg ansi-bold">  throw new Error('No native build was found for ' + target + '\n    loaded from: ' + dir + '\n')
+</span>
+<span class="ansi-red-intense-fg ansi-bold">  ^
+</span>
+<span class="ansi-red-intense-fg ansi-bold">
+</span>
+<span class="ansi-red-intense-fg ansi-bold">Error: No native build was found for platform=linux arch=x64 runtime=electron abi=108 uv=1 libc=glibc node=18.15.0
+</span>
+<span class="ansi-red-intense-fg ansi-bold">    loaded from: /home/shreyasapkal/anaconda3/lib/node_modules/ijavascript/node_modules/zeromq
+</span>
+<span class="ansi-red-intense-fg ansi-bold">
+</span>
+<span class="ansi-red-intense-fg ansi-bold">    at load.resolve.load.path (/home/shreyasapkal/anaconda3/lib/node_modules/ijavascript/node_modules/node-gyp-build/node-gyp-build.js:60:9)
+</span>
+<span class="ansi-red-intense-fg ansi-bold">    at load (/home/shreyasapkal/anaconda3/lib/node_modules/ijavascript/node_modules/node-gyp-build/node-gyp-build.js:22:30)
+</span>
+<span class="ansi-red-intense-fg ansi-bold">    at Object.&lt;anonymous&gt; (/home/shreyasapkal/anaconda3/lib/node_modules/ijavascript/node_modules/zeromq/binding.js:1:43)
+</span>
+<span class="ansi-red-intense-fg ansi-bold">    at Module._compile (node:internal/modules/cjs/loader:1254:14)
+</span>
+<span class="ansi-red-intense-fg ansi-bold">    at Module._extensions..js (node:internal/modules/cjs/loader:1308:10)
+</span>
+<span class="ansi-red-intense-fg ansi-bold">    at Module.load (node:internal/modules/cjs/loader:1117:32)
+</span>
+<span class="ansi-red-intense-fg ansi-bold">    at Module._load (node:internal/modules/cjs/loader:958:12)
+</span>
+<span class="ansi-red-intense-fg ansi-bold">    at Module.require (node:internal/modules/cjs/loader:1141:19)
+</span>
+<span class="ansi-red-intense-fg ansi-bold">    at require (node:internal/modules/cjs/helpers:110:18)
+</span>
+<span class="ansi-red-intense-fg ansi-bold">    at Object.&lt;anonymous&gt; (/home/shreyasapkal/anaconda3/lib/node_modules/ijavascript/node_modules/zeromq/lib/index.js:6:11)
+</span>
+<span class="ansi-red-intense-fg ansi-bold">
+</span>
+<span class="ansi-red-intense-fg ansi-bold">Node.js v18.15.0. 
+</span>
+<span class="ansi-red-intense-fg ansi-bold">View Jupyter &lt;a href='command:jupyter.viewOutput'&gt;log&lt;/a&gt; for further details.</span></pre>
 </div>
 </div>
 
@@ -887,6 +988,34 @@ false
 </div>
     
 
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">time</span> 
+<span class="k">if</span> <span class="p">(</span><span class="mi">0</span> <span class="o">&lt;</span> <span class="n">time</span> <span class="o">&lt;</span> <span class="mi">12</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">greeting</span> <span class="o">=</span> <span class="s2">"Good morning"</span><span class="p">;</span>
+<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">time</span> <span class="o">=</span> <span class="mi">12</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">greeting</span> <span class="o">=</span> <span class="s2">"Good afternoon"</span><span class="p">;</span>
+<span class="p">}</span> <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="mi">13</span> <span class="o">&lt;</span> <span class="n">time</span> <span class="o">&lt;</span> <span class="mi">17</span><span class="p">){</span>
+    <span class="n">greeting</span> <span class="o">=</span> <span class="s2">"Good afternoon"</span><span class="p">;</span>
+<span class="p">}</span> <span class="k">else</span> <span class="p">(</span><span class="mi">17</span> <span class="o">&lt;</span> <span class="n">time</span> <span class="o">&lt;</span> <span class="mi">23</span><span class="p">)</span> <span class="p">{</span>
+    <span class="n">greeting</span> <span class="o">=</span> <span class="s2">"Good evening"</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="n">greeting</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -933,10 +1062,20 @@ false
 </h1>
 <ol>
 <li>Where do you store the JavaScript Code?</li>
+</ol>
+<p>You store the JavaScript code within the <code>&lt;head&gt;</code> section of an HTML page.</p>
+<ol>
 <li>How do you import a JS file into HTML?</li>
+</ol>
+<p>You can import a JS file into HTML by first saving the javascript file with a .js extension, and then refer to it in my HTML code using the src attribute using the <code>&lt;script&gt;</code> tag within the HTML code.</p>
+<ol>
 <li>What is onClick?</li>
+</ol>
+<p>onClick in Javascript is when some code executes when the user clicks on something.</p>
+<ol>
 <li>What tag do you use to write JavaScript code?</li>
 </ol>
+<p>The <code>&lt;script&gt;</code> tag is used to embed JavaScript code.</p>
 
 </div>
 </div>
